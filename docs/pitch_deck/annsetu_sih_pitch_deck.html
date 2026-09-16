@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnnSetu — Smart India Hackathon Pitch Deck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --primary-green: #14422B;
+      --primary-green-dark: #0D2C1D;
+      --primary-green-light: #1C5A3B;
+      --accent-saffron: #E65A00;
+      --accent-saffron-light: #FFF0E6;
+      --bg-sand: #FAF7F2;
+      --bg-card: #FFFFFF;
+      --text-charcoal: #1E293B;
+      --text-muted: #64748B;
+      --border-light: #E2DDD5;
+      --accessible-blue: #0284C7;
+      --accessible-blue-light: #E0F2FE;
+      --status-green: #16A34A;
+      --status-green-bg: #DCFCE7;
+      --status-amber: #D97706;
+      --status-amber-bg: #FEF3C7;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #111827;
+      color: var(--text-charcoal);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px 16px;
+    }
+
+    /* Top Control Bar */
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1280px;
+      margin-bottom: 16px;
+      color: #F3F4F6;
+    }
+
+    .brand-tag {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-tag .hindi {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      color: #FFA726;
+      font-weight: 700;
+      background: rgba(255, 167, 38, 0.15);
+      padding: 2px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 167, 38, 0.3);
+    }
+
+    .nav-buttons {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn {
+      background: #374151;
+      color: #F9FAFB;
+      border: 1px solid #4B5563;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .btn:hover {
+      background: #4B5563;
+      border-color: #6B7280;
+    }
+
+    .btn-saffron {
+      background: var(--accent-saffron);
+      border-color: #C04800;
+    }
+
+    .btn-saffron:hover {
+      background: #FF6F1A;
+    }
+
+    .slide-indicator {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #9CA3AF;
+      min-width: 70px;
+      text-align: center;
+    }
+
+    /* Deck Viewport (16:9) */
+    .deck-container {
+      width: 100%;
+      max-width: 1280px;
+      aspect-ratio: 16 / 9;
+      background: var(--bg-sand);
+      border-radius: 12px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      padding: 36px 44px 30px;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      overflow: hidden;
+    }
+
+    .slide.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    /* Common Slide Components */
+    .slide-header {
+      margin-bottom: 16px;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent-saffron);
+      margin-bottom: 4px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: var(--accent-saffron);
+      border-radius: 50%;
+    }
+
+    .slide-title {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--primary-green);
+      line-height: 1.2;
+    }
+
+    .slide-subtitle {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+
+    .slide-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-light);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    .slide-footer .citations a {
+      color: var(--accessible-blue);
+      text-decoration: none;
+      margin-right: 12px;
+    }
+
+    .slide-footer .citations a:hover {
+      text-decoration: underline;
+    }
+
+    /* SLIDE 1 SPECIFIC STYLES */
+    .s1-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex: 1;
+    }
+
+    .insight-pill {
+      background: #FFF5EC;
+      border-left: 4px solid var(--accent-saffron);
+      padding: 8px 14px;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.85rem;
+      color: #9A3412;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .journey-comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      flex: 1;
+    }
+
+    .journey-box {
+      background: #FFFFFF;
+      border-radius: 8px;
+      border: 1px solid var(--border-light);
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .journey-box.bad {
+      border-top: 3px solid #DC2626;
+      background: #FEF2F2;
+    }
+
+    .journey-box.good {
+      border-top: 3px solid var(--status-green);
+      background: #F0FDF4;
+    }
+
+    .journey-header {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .journey-box.bad .journey-header {
+      color: #B91C1C;
+    }
+
+    .journey-box.good .journey-header {
+      color: var(--primary-green);
+    }
+
+    .step-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .step-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 6px 8px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .step-num {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--primary-green);
+      color: white;
+      font-size: 0.65rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .differentiators-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .diff-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 10px 12px;
+      border-left: 3px solid var(--primary-green);
+    }
+
+    .diff-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--primary-green);
+      margin-bottom: 2px;
+    }
+
+    .diff-desc {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      line-height: 1.3;
+    }
+
+    .innovation-banner {
+      background: var(--primary-green);
+      color: #FFFFFF;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* SLIDE 2 SPECIFIC STYLES: ARCHITECTURE */
+    .arch-layout {
+      display: grid;
+      grid-template-columns: 2.2fr 1fr;
+      gap: 16px;
+      flex: 1;
+    }
+
+    .arch-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .arch-layer {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 8px 12px;
+      position: relative;
+    }
+
+    .arch-layer-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--primary-green);
+      margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .arch-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .chip {
+      font-size: 0.68rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: #F1F5F9;
+      color: #334155;
+      border: 1px solid #E2E8F0;
+    }
+
+    .chip.primary {
+      background: #ECFDF5;
+      color: #065F46;
+      border-color: #A7F3D0;
+    }
+
+    .chip.realtime {
+      background: #EFF6FF;
+      color: #1E40AF;
+      border-color: #BFDBFE;
+    }
+
+    .chip.adapter {
+      background: #FFF7ED;
+      color: #9A3412;
+      border-color: #FED7AA;
+    }
+
+    .chip.data {
+      background: #FAF5FF;
+      color: #6B21A8;
+      border-color: #E9D5FF;
+    }
+
+    .arch-side-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .info-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 10px 12px;
+      flex: 1;
+    }
+
+    .info-card h4 {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--primary-green);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .info-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.7rem;
+      color: #475569;
+    }
+
+    .info-card ul li {
+      position: relative;
+      padding-left: 10px;
+      line-height: 1.35;
+    }
+
+    .info-card ul li::before {
+      content: '▪';
+      position: absolute;
+      left: 0;
+      color: var(--accent-saffron);
+    }
+
+    .security-banner {
+      grid-column: 1 / -1;
+      background: #0F172A;
+      color: #E2E8F0;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .security-tag {
+      color: #38BDF8;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    /* SLIDE 3 SPECIFIC STYLES: FEASIBILITY & RISK */
+    .s3-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex: 1;
+    }
+
+    .timeline-strip {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+
+    .timeline-step {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-top: 3px solid var(--primary-green);
+      border-radius: 6px;
+      padding: 8px 10px;
+    }
+
+    .timeline-day {
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: var(--accent-saffron);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .timeline-task {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--primary-green);
+      margin-top: 2px;
+      line-height: 1.25;
+    }
+
+    .risk-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #FFFFFF;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      font-size: 0.7rem;
+      flex: 1;
+    }
+
+    .risk-table th {
+      background: #F1F5F9;
+      color: #334155;
+      text-align: left;
+      padding: 6px 10px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .risk-table td {
+      padding: 5px 10px;
+      border-bottom: 1px solid #F1F5F9;
+      line-height: 1.3;
+    }
+
+    .risk-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .risk-tag {
+      display: inline-block;
+      font-size: 0.62rem;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 3px;
+      background: #FEF2F2;
+      color: #991B1B;
+      border: 1px solid #FECACA;
+    }
+
+    .mitigation-tag {
+      color: #065F46;
+      font-weight: 600;
+    }
+
+    .roadmap-bar {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr 1.2fr;
+      gap: 10px;
+    }
+
+    .roadmap-node {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 6px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .roadmap-badge {
+      font-size: 0.62rem;
+      font-weight: 700;
+      background: var(--primary-green);
+      color: #FFFFFF;
+      padding: 2px 6px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+
+    .roadmap-text {
+      font-size: 0.68rem;
+      color: var(--text-charcoal);
+      font-weight: 500;
+    }
+
+    /* SLIDE 4 SPECIFIC STYLES: IMPACT & METRICS */
+    .s4-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+    }
+
+    .beneficiaries-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .beneficiary-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 10px 12px;
+    }
+
+    .beneficiary-card.farmer {
+      border-top: 3px solid var(--accent-saffron);
+    }
+
+    .beneficiary-card.mandi {
+      border-top: 3px solid var(--primary-green);
+    }
+
+    .beneficiary-card.gov {
+      border-top: 3px solid var(--accessible-blue);
+    }
+
+    .beneficiary-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .beneficiary-card.farmer .beneficiary-title {
+      color: var(--accent-saffron);
+    }
+
+    .beneficiary-card.mandi .beneficiary-title {
+      color: var(--primary-green);
+    }
+
+    .beneficiary-card.gov .beneficiary-title {
+      color: var(--accessible-blue);
+    }
+
+    .beneficiary-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.68rem;
+      color: #334155;
+      line-height: 1.3;
+    }
+
+    .beneficiary-list li {
+      position: relative;
+      padding-left: 10px;
+    }
+
+    .beneficiary-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--status-green);
+      font-weight: bold;
+    }
+
+    .metrics-section {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 10px 14px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .metrics-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .metrics-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--primary-green);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .kpi-disclaimer {
+      font-size: 0.62rem;
+      color: #9A3412;
+      background: #FFF7ED;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-weight: 600;
+      border: 1px solid #FED7AA;
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .kpi-item {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 4px;
+      padding: 6px 8px;
+      text-align: center;
+    }
+
+    .kpi-value {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary-green);
+    }
+
+    .kpi-label {
+      font-size: 0.62rem;
+      color: #64748B;
+      font-weight: 600;
+      margin-top: 1px;
+      line-height: 1.2;
+    }
+
+    .triple-impact-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      font-size: 0.68rem;
+    }
+
+    .impact-pill {
+      background: #F1F5F9;
+      padding: 5px 8px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 500;
+      color: #334155;
+    }
+
+    .impact-pill strong {
+      color: var(--primary-green);
+    }
+
+    /* SLIDE 5 SPECIFIC STYLES: RESEARCH & VALIDATION */
+    .s5-layout {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 16px;
+      flex: 1;
+    }
+
+    .findings-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .finding-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 8px 10px;
+      display: grid;
+      grid-template-columns: 1.1fr 1.2fr;
+      gap: 8px;
+      font-size: 0.68rem;
+    }
+
+    .finding-label {
+      font-weight: 600;
+      color: #B45309;
+      background: #FFFBEB;
+      padding: 4px 6px;
+      border-radius: 4px;
+      border-left: 3px solid #D97706;
+      line-height: 1.3;
+    }
+
+    .response-label {
+      font-weight: 600;
+      color: #047857;
+      background: #ECFDF5;
+      padding: 4px 6px;
+      border-radius: 4px;
+      border-left: 3px solid #059669;
+      line-height: 1.3;
+    }
+
+    .validation-side {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .resources-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 10px 12px;
+    }
+
+    .resources-card h4 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--primary-green);
+      margin-bottom: 6px;
+    }
+
+    .link-list {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      font-size: 0.65rem;
+    }
+
+    .link-list a {
+      color: var(--accessible-blue);
+      text-decoration: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .link-list a:hover {
+      text-decoration: underline;
+    }
+
+    .qr-placeholders {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .qr-box {
+      border: 1px dashed #CBD5E1;
+      border-radius: 4px;
+      background: #F8FAFC;
+      padding: 6px 4px;
+      text-align: center;
+      font-size: 0.62rem;
+      color: #475569;
+    }
+
+    .qr-box .qr-icon {
+      font-size: 1.2rem;
+      margin-bottom: 2px;
+      color: var(--primary-green);
+    }
+
+    .closing-banner {
+      grid-column: 1 / -1;
+      background: var(--primary-green);
+      color: #FFFFFF;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-align: center;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    /* PRINT / EXPORT STYLES */
+    @media print {
+      body {
+        background: none;
+        padding: 0;
+      }
+
+      .controls {
+        display: none;
+      }
+
+      .deck-container {
+        box-shadow: none;
+        border-radius: 0;
+        border: none;
+        max-width: none;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .slide {
+        display: flex !important;
+        opacity: 1 !important;
+        page-break-after: always;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header Navigation & Actions -->
+  <header class="controls">
+    <div class="brand-tag">
+      🌾 AnnSetu <span class="hindi">अन्न सेतु</span>
+      <span style="font-size: 0.8rem; font-weight: 400; opacity: 0.8;">| Smart India Hackathon Pitch Deck</span>
+    </div>
+    <div class="nav-buttons">
+      <button class="btn" onclick="prevSlide()" title="Previous Slide (←)">‹ Prev</button>
+      <div class="slide-indicator" id="slideIndicator">1 / 5</div>
+      <button class="btn" onclick="nextSlide()" title="Next Slide (→)">Next ›</button>
+      <button class="btn" onclick="toggleFullScreen()" title="Full Screen (F)">⛶ Fullscreen</button>
+      <button class="btn btn-saffron" onclick="window.print()" title="Print or Save as PDF">🖨️ Export PDF</button>
+    </div>
+  </header>
+
+  <!-- Presentation Viewport (16:9) -->
+  <main class="deck-container" id="deckContainer">
+
+    <!-- ===================================================================
+         SLIDE 1: IDEA TITLE AND PROPOSED SOLUTION
+         =================================================================== -->
+    <section class="slide active" id="slide-1">
+      <header class="slide-header">
+        <div class="eyebrow">Smart India Hackathon 2026 • Problem Statement SIH-2026</div>
+        <h1 class="slide-title">AnnSetu: Real-Time Procurement Queues for Every Farmer</h1>
+        <p class="slide-subtitle">Farmers know when to arrive, follow every procurement step, and track payment on any
+          phone.</p>
+      </header>
+
+      <div class="s1-container">
+        <!-- Core Problem Insight -->
+        <div class="insight-pill">
+          <span>💡</span>
+          <span><strong>Core Insight:</strong> A procurement token confirms eligibility. It does not tell a farmer when
+            the center will actually serve them.</span>
+        </div>
+
+        <!-- Before & After Comparison -->
+        <div class="journey-comparison">
+          <!-- Current Reality -->
+          <div class="journey-box bad">
+            <div class="journey-header">
+              <span>Current Reality: Blind Waiting & Guesswork</span>
+              <span style="color: #DC2626;">✕ Fragmented</span>
+            </div>
+            <div class="step-flow">
+              <div class="step-item" style="color: #991B1B;">
+                <span class="step-num" style="background: #DC2626;">1</span>
+                <span>Static token issued for a fixed calendar date</span>
+              </div>
+              <div class="step-item" style="color: #991B1B;">
+                <span class="step-num" style="background: #DC2626;">2</span>
+                <span>Farmer arrives at 6 AM; center already overbooked</span>
+              </div>
+              <div class="step-item" style="color: #991B1B;">
+                <span class="step-num" style="background: #DC2626;">3</span>
+                <span>6–14 hours blind waiting with laden tractor</span>
+              </div>
+              <div class="step-item" style="color: #991B1B;">
+                <span class="step-num" style="background: #DC2626;">4</span>
+                <span>Turns deferred to next day; multiple costly trips</span>
+              </div>
+              <div class="step-item" style="color: #991B1B;">
+                <span class="step-num" style="background: #DC2626;">5</span>
+                <span>Opaque DBT payment status with no milestone clarity</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AnnSetu Solution -->
+          <div class="journey-box good">
+            <div class="journey-header">
+              <span>AnnSetu Journey: Predictable, Dignified Flow</span>
+              <span style="color: var(--status-green);">✓ End-to-End</span>
+            </div>
+            <div class="step-flow">
+              <div class="step-item">
+                <span class="step-num">1</span>
+                <span><strong>Verify:</strong> Single AgriStack Farmer ID & Aadhaar e-KYC</span>
+              </div>
+              <div class="step-item">
+                <span class="step-num">2</span>
+                <span><strong>Book:</strong> Valid slot controlled by center processing capacity</span>
+              </div>
+              <div class="step-item">
+                <span class="step-num">3</span>
+                <span><strong>Track:</strong> Live queue position & dynamic arrival time window</span>
+              </div>
+              <div class="step-item">
+                <span class="step-num">4</span>
+                <span><strong>Alerts:</strong> Multi-channel updates via PWA, SMS, USSD, or IVR</span>
+              </div>
+              <div class="step-item">
+                <span class="step-num">5</span>
+                <span><strong>Procure & Pay:</strong> Live status: Gate → Weighing → QC → PFMS DBT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Key Differentiators -->
+        <div class="differentiators-row">
+          <div class="diff-card">
+            <div class="diff-title">Single Interoperable Experience</div>
+            <div class="diff-desc">One farmer identity across multiple state procurement portals without
+              re-registration.</div>
+          </div>
+          <div class="diff-card">
+            <div class="diff-title">Capacity-Aware Live Visibility</div>
+            <div class="diff-desc">Prevents overbooking at mandi gates; converts static numbers into dynamic arrival
+              windows.</div>
+          </div>
+          <div class="diff-card">
+            <div class="diff-title">100% Inclusive Channel Access</div>
+            <div class="diff-desc">Smartphone PWA alongside zero-data USSD (*99# style) and interactive IVR phone calls.
+            </div>
+          </div>
+        </div>
+
+        <!-- Innovation Statement -->
+        <div class="innovation-banner">
+          <span>🚀 <strong>Innovation:</strong> AnnSetu improves existing procurement portals instead of replacing
+            them.</span>
+          <span style="font-size: 0.72rem; opacity: 0.9;">Pluggable Adapter Model • Zero Greenfield Risk</span>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <div class="citations">
+          <span>Sources: PM-AASHA Procurement Guidelines • DAC&FW AgriStack Architecture • Digital India Mandi
+            Survey</span>
+        </div>
+        <div>Slide 1 of 5</div>
+      </footer>
+    </section>
+
+    <!-- ===================================================================
+         SLIDE 2: TECHNICAL APPROACH
+         =================================================================== -->
+    <section class="slide" id="slide-2">
+      <header class="slide-header">
+        <div class="eyebrow">Architecture & Engineering Specification</div>
+        <h1 class="slide-title">Two-Service Architecture with Government Integration Adapters</h1>
+        <p class="slide-subtitle">Engineered for solo developer velocity, sub-second queue responsiveness, and resilient
+          state-level scale.</p>
+      </header>
+
+      <div class="arch-layout">
+        <!-- Architecture Diagram -->
+        <div class="arch-stack">
+          <!-- Layer 1: Channels -->
+          <div class="arch-layer" style="border-left: 4px solid var(--accent-saffron);">
+            <div class="arch-layer-title">
+              <span>1. Farmer & Staff Channel Layer (Multi-Device Delivery)</span>
+              <span style="color: var(--accent-saffron); font-size: 0.65rem;">Omnichannel Access</span>
+            </div>
+            <div class="arch-chips">
+              <span class="chip primary">React 18 + Vite PWA</span>
+              <span class="chip primary">Staff Operator Dashboard</span>
+              <span class="chip primary">USSD Gateway Simulator</span>
+              <span class="chip primary">Web Speech IVR Engine</span>
+              <span class="chip">Workbox Offline ServiceWorker</span>
+            </div>
+          </div>
+
+          <!-- Layer 2: Core Service -->
+          <div class="arch-layer" style="border-left: 4px solid var(--primary-green);">
+            <div class="arch-layer-title">
+              <span>2. Core Transaction Service (Spring Boot 3.3 • Java 21 LTS)</span>
+              <span style="color: var(--primary-green); font-size: 0.65rem;">ACID & Business Logic</span>
+            </div>
+            <div class="arch-chips">
+              <span class="chip primary">Spring Security (JWT/RBAC)</span>
+              <span class="chip primary">Capacity Booking API</span>
+              <span class="chip primary">Token Lifecycle Engine</span>
+              <span class="chip primary">Procurement & QC Module</span>
+              <span class="chip primary">PFMS DBT Sync</span>
+              <span class="chip">DPDP Consent & Audit Logs</span>
+            </div>
+          </div>
+
+          <!-- Layer 3: Realtime Service -->
+          <div class="arch-layer" style="border-left: 4px solid var(--accessible-blue);">
+            <div class="arch-layer-title">
+              <span>3. Real-Time Service (Node.js 22 LTS • Socket.io)</span>
+              <span style="color: var(--accessible-blue); font-size: 0.65rem;">Sub-Second Queue Push</span>
+            </div>
+            <div class="arch-chips">
+              <span class="chip realtime">Socket.io 4.7 (Mandi Room Broadcasts)</span>
+              <span class="chip realtime">Redis Pub/Sub Adapter</span>
+              <span class="chip realtime">USSD Session State Machine</span>
+              <span class="chip realtime">Zod Event Schemas</span>
+            </div>
+          </div>
+
+          <!-- Layer 4: Data Layer -->
+          <div class="arch-layer" style="border-left: 4px solid #8B5CF6;">
+            <div class="arch-layer-title">
+              <span>4. High-Performance Data Layer</span>
+              <span style="color: #8B5CF6; font-size: 0.65rem;">Persistence & In-Memory Speed</span>
+            </div>
+            <div class="arch-chips">
+              <span class="chip data">PostgreSQL 16 (JSONB, pg_audit, Row-Level Security)</span>
+              <span class="chip data">Redis 7.2 (Queue Sorted Sets, Rate Limits, Token Cache)</span>
+            </div>
+          </div>
+
+          <!-- Layer 5: Adapters -->
+          <div class="arch-layer" style="border-left: 4px solid #D97706;">
+            <div class="arch-layer-title">
+              <span>5. Government Integration Adapter Layer (Pluggable SPI)</span>
+              <span style="color: #D97706; font-size: 0.65rem;">Production-Ready Mocks</span>
+            </div>
+            <div class="arch-chips">
+              <span class="chip adapter">AgriStack Farmer ID</span>
+              <span class="chip adapter">UIDAI Aadhaar e-KYC</span>
+              <span class="chip adapter">PFMS / DBT Payment Tracker</span>
+              <span class="chip adapter">e-Paddy / e-Kharid Adapters</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Explanation Column -->
+        <div class="arch-side-panel">
+          <div class="info-card">
+            <h4>⚡ Real-Time Queue Methodology</h4>
+            <ul>
+              <li><strong>Dynamic ETA:</strong> Calculated using active processing counters & moving average service
+                rate.</li>
+              <li><strong>Event Propagation:</strong> Staff action (e.g. Weighing) commits to DB → pushes to Redis
+                Pub/Sub in &lt;50ms.</li>
+              <li><strong>Offline Resilience:</strong> PWA stores latest verified token in IndexedDB/LocalStorage during
+                network drops.</li>
+            </ul>
+          </div>
+
+          <div class="info-card">
+            <h4>🛡️ Solo Developer Velocity</h4>
+            <ul>
+              <li><strong>Two Deployable Units:</strong> Spring Boot Core + Node.js Real-time allows rapid 1-week build
+                & testing.</li>
+              <li><strong>Predictable Mocks:</strong> Deterministic government mock adapters isolate external API
+                dependency risks.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Security Band -->
+        <div class="security-banner">
+          <div><span class="security-tag">🔒 SECURITY & COMPLIANCE:</span> DPDP Act 2023 Aligned • Consent Capture •
+            Token Bucket Rate Limiting (Bucket4j) • RBAC • TLS 1.3 / AES-256 • Immutable Audit Logs</div>
+          <div style="font-size: 0.65rem; color: #94A3B8;">NIC MeghRaj Container Compatible</div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <div class="citations">
+          <span>Docs: <a href="https://spring.io/projects/spring-boot" target="_blank">Spring Boot 3.3</a> • <a
+              href="https://nodejs.org/" target="_blank">Node.js LTS</a> • <a href="https://socket.io/"
+              target="_blank">Socket.io</a> • <a href="https://www.postgresql.org/" target="_blank">PostgreSQL 16</a> •
+            <a href="https://redis.io/" target="_blank">Redis 7.2</a></span>
+        </div>
+        <div>Slide 2 of 5</div>
+      </footer>
+    </section>
+
+    <!-- ===================================================================
+         SLIDE 3: FEASIBILITY AND VIABILITY
+         =================================================================== -->
+    <section class="slide" id="slide-3">
+      <header class="slide-header">
+        <div class="eyebrow">Execution Roadmap & Risk Management</div>
+        <h1 class="slide-title">Pilot Ready in One Week, Designed for State-Level Expansion</h1>
+        <p class="slide-subtitle">A realistic 7-day development plan backed by proactive technical mitigations and
+          linear scalability.</p>
+      </header>
+
+      <div class="s3-layout">
+        <!-- 7-Day Sprint Plan -->
+        <div class="timeline-strip">
+          <div class="timeline-step">
+            <div class="timeline-day">Days 1–2</div>
+            <div class="timeline-task">Data Schema, Auth Mocks & Capacity Booking APIs</div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-day">Days 3–4</div>
+            <div class="timeline-task">Farmer PWA, Staff Dashboard & Live Queue Engine</div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-day">Day 5</div>
+            <div class="timeline-task">USSD Flow, IVR Voice Demo & Govt Adapters</div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-day">Day 6</div>
+            <div class="timeline-task">E2E Flow Integration, Fallbacks & Failure Tests</div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-day">Day 7</div>
+            <div class="timeline-task">Docker Packaging, Rehearsal & Live Submission Demo</div>
+          </div>
+        </div>
+
+        <!-- Risk Matrix -->
+        <table class="risk-table">
+          <thead>
+            <tr>
+              <th style="width: 22%;">Identified Risk</th>
+              <th style="width: 12%;">Severity</th>
+              <th style="width: 44%;">Engineered Technical Response</th>
+              <th style="width: 22%;">Validation Mode</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Live Govt APIs Unavailable</strong></td>
+              <td><span class="risk-tag">High Likelihood</span></td>
+              <td><span class="mitigation-tag">Pluggable Adapter Pattern:</span> Realistic mock adapters with seeded
+                data & latency simulation.</td>
+              <td>Deterministic integration tests</td>
+            </tr>
+            <tr>
+              <td><strong>Queue Estimate Inaccuracy</strong></td>
+              <td><span class="risk-tag">Operational</span></td>
+              <td><span class="mitigation-tag">Event Reconciliation:</span> Operator step timestamps trigger
+                moving-average recalculation.</td>
+              <td>Dynamic queue speed tests</td>
+            </tr>
+            <tr>
+              <td><strong>Weak Rural 2G / No Smartphone</strong></td>
+              <td><span class="risk-tag">Inclusion</span></td>
+              <td><span class="mitigation-tag">Zero-Smartphone Parity:</span> Offline PWA caching + interactive USSD
+                (*99#) & IVR voice calls.</td>
+              <td>Throttled 2G & feature-phone testing</td>
+            </tr>
+            <tr>
+              <td><strong>Harvest Peak Traffic & Scalping</strong></td>
+              <td><span class="risk-tag">Load Surge</span></td>
+              <td><span class="mitigation-tag">Defense-in-Depth:</span> Redis distributed rate-limiting (Bucket4j),
+                CAPTCHA, and stateless scaling.</td>
+              <td>5,000 req/sec k6 benchmark</td>
+            </tr>
+            <tr>
+              <td><strong>Data Privacy & Tampering</strong></td>
+              <td><span class="risk-tag">Compliance</span></td>
+              <td><span class="mitigation-tag">DPDP Governance:</span> Consent-based storage, RBAC, immutable audit
+                logging, right-to-erasure API.</td>
+              <td>pg_audit verification logs</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Pilot Scope & Scalability Roadmap -->
+        <div class="roadmap-bar">
+          <div class="roadmap-node">
+            <span class="roadmap-badge">Phase 1: SIH Demo</span>
+            <span class="roadmap-text">1 State • 2–3 Centers • 1,000 Seeded Farmers • Full E2E Flow</span>
+          </div>
+          <div class="roadmap-node">
+            <span class="roadmap-badge">Phase 2: Mandi Pilot</span>
+            <span class="roadmap-text">1 District (25 Centers) • Real AgriStack sandbox & SMS gateway</span>
+          </div>
+          <div class="roadmap-node">
+            <span class="roadmap-badge">Phase 3: Multi-State</span>
+            <span class="roadmap-text">State adapter expansion • Kubernetes auto-scale on NIC MeghRaj</span>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <div class="citations">
+          <span>Frameworks: MeitY Agile Development • NIC MeghRaj Cloud Container Guidelines • DPDP Act 2023
+            Rules</span>
+        </div>
+        <div>Slide 3 of 5</div>
+      </footer>
+    </section>
+
+    <!-- ===================================================================
+         SLIDE 4: IMPACT AND BENEFITS
+         =================================================================== -->
+    <section class="slide" id="slide-4">
+      <header class="slide-header">
+        <div class="eyebrow">Ecosystem Value Creation & Quantifiable Outcomes</div>
+        <h1 class="slide-title">Less Waiting, Fewer Wasted Trips, Clearer Payments</h1>
+        <p class="slide-subtitle">Empowering farmers with dignity, streamlining center logistics, and providing audited
+          governance.</p>
+      </header>
+
+      <div class="s4-layout">
+        <!-- 3 Beneficiary Groups -->
+        <div class="beneficiaries-grid">
+          <div class="beneficiary-card farmer">
+            <div class="beneficiary-title">
+              <span>🧑‍🌾 For Farmers</span>
+              <span style="font-size: 0.65rem;">Primary User</span>
+            </div>
+            <ul class="beneficiary-list">
+              <li>Arrive only when called; avoid 8+ hours waiting.</li>
+              <li>Eliminate ₹500–₹1,200 tractor transit & return trips.</li>
+              <li>Feature-phone farmers get identical USSD/IVR alerts.</li>
+              <li>End-to-end transparent visibility until DBT bank credit.</li>
+            </ul>
+          </div>
+
+          <div class="beneficiary-card mandi">
+            <div class="beneficiary-title">
+              <span>🏢 For Procurement Centers</span>
+              <span style="font-size: 0.65rem;">Operational</span>
+            </div>
+            <ul class="beneficiary-list">
+              <li>Evenly throttled arrivals; eliminates gate congestion.</li>
+              <li>Optimized utilization across weighbridges & QC counters.</li>
+              <li>Instant broadcast of weather or equipment delays.</li>
+              <li>Transparent logs protect operators against false disputes.</li>
+            </ul>
+          </div>
+
+          <div class="beneficiary-card gov">
+            <div class="beneficiary-title">
+              <span>🏛️ For State & Central Govt</span>
+              <span style="font-size: 0.65rem;">Governance</span>
+            </div>
+            <ul class="beneficiary-list">
+              <li>Real-time telemetry on state-wide procurement bottlenecks.</li>
+              <li>Single interoperable citizen experience over old portals.</li>
+              <li>Immutable audit trails preventing ghost procurement.</li>
+              <li>Data-backed capacity planning for upcoming harvest seasons.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pilot Success Metrics (Measurable KPIs) -->
+        <div class="metrics-section">
+          <div class="metrics-header">
+            <div class="metrics-title">
+              <span>🎯 Pilot Success Targets (Measurable KPIs)</span>
+            </div>
+            <div class="kpi-disclaimer">⚠️ Proposed Operational Targets for Pilot Testing (Not Claimed Results)</div>
+          </div>
+
+          <div class="kpi-grid">
+            <div class="kpi-item">
+              <div class="kpi-value">&lt; 45 min</div>
+              <div class="kpi-label">On-Site Wait Time (Down from 8–12 hrs)</div>
+            </div>
+            <div class="kpi-item">
+              <div class="kpi-value">&lt; 2%</div>
+              <div class="kpi-label">Unnecessary / Missed Mandi Trips</div>
+            </div>
+            <div class="kpi-item">
+              <div class="kpi-value">&gt; 98%</div>
+              <div class="kpi-label">Notification Delivery (PWA/SMS/USSD)</div>
+            </div>
+            <div class="kpi-item">
+              <div class="kpi-value">&lt; 500 ms</div>
+              <div class="kpi-label">Live Queue Position Update Latency</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Triple Impact Banner -->
+        <div class="triple-impact-strip">
+          <div class="impact-pill">
+            <span>🤝</span>
+            <span><strong>Social:</strong> Predictable, stress-free access for smallholders.</span>
+          </div>
+          <div class="impact-pill">
+            <span>💰</span>
+            <span><strong>Economic:</strong> Saves daily wages & rental costs for 10,000s of farmers.</span>
+          </div>
+          <div class="impact-pill">
+            <span>🌱</span>
+            <span><strong>Environmental:</strong> Cuts diesel tractor idling & mandi road emissions.</span>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <div class="citations">
+          <span>Benchmark: NITI Aayog Agricultural Logistics Report • Ministry of Agriculture Procurement
+            Statistics</span>
+        </div>
+        <div>Slide 4 of 5</div>
+      </footer>
+    </section>
+
+    <!-- ===================================================================
+         SLIDE 5: RESEARCH AND REFERENCES
+         =================================================================== -->
+    <section class="slide" id="slide-5">
+      <header class="slide-header">
+        <div class="eyebrow">Empirical Grounding, Standards & Verification</div>
+        <h1 class="slide-title">Research Foundation and Validation Plan</h1>
+        <p class="slide-subtitle">Translating field observations into resilient architecture aligned with national
+          digital public infrastructure.</p>
+      </header>
+
+      <div class="s5-layout">
+        <!-- Findings to Architecture Mapping -->
+        <div class="findings-stack">
+          <div class="finding-card">
+            <div class="finding-label"><strong>Observation 1:</strong> Farmers battle fragmented state portals with
+              isolated user credentials.</div>
+            <div class="response-label"><strong>Design Response:</strong> AgriStack Farmer ID abstraction with pluggable
+              state adapter pattern.</div>
+          </div>
+          <div class="finding-card">
+            <div class="finding-label"><strong>Observation 2:</strong> 40%+ of rural farming households rely on basic 2G
+              feature phones.</div>
+            <div class="response-label"><strong>Design Response:</strong> Zero-smartphone penalty: full parity via USSD
+              state machine & IVR voice.</div>
+          </div>
+          <div class="finding-card">
+            <div class="finding-label"><strong>Observation 3:</strong> Sensitive land records & bank DBT accounts
+              vulnerable to misuse.</div>
+            <div class="response-label"><strong>Design Response:</strong> DPDP 2023 compliance: explicit purpose
+              consent, RBAC & audit trails.</div>
+          </div>
+          <div class="finding-card">
+            <div class="finding-label"><strong>Observation 4:</strong> Production govt APIs require accredited agency
+              credentials.</div>
+            <div class="response-label"><strong>Design Response:</strong> Production-grade mock adapters emulating
+              realistic latency & error quotas.</div>
+          </div>
+        </div>
+
+        <!-- Verified Resources & QR Links -->
+        <div class="validation-side">
+          <div class="resources-card">
+            <h4>🌐 Verified Government & Technical Sources</h4>
+            <div class="link-list">
+              <a href="https://uidai.gov.in/hi/developer-section" target="_blank">▸ UIDAI Developer Portal (Aadhaar
+                e-KYC Sandbox)</a>
+              <a href="https://pfms.nic.in/" target="_blank">▸ PFMS Portal (Public Financial Management System DBT)</a>
+              <a href="https://cloud.gov.in/" target="_blank">▸ NIC MeghRaj Cloud (Government Container Service)</a>
+              <a href="https://www.digitalindia.gov.in/" target="_blank">▸ Digital Personal Data Protection (DPDP) Act
+                2023</a>
+              <a href="https://spring.io/projects/spring-boot" target="_blank">▸ Spring Boot 3.3 LTS Baseline
+                Specification</a>
+              <a href="https://www.postgresql.org/docs/16/" target="_blank">▸ PostgreSQL 16 ACID, JSONB & pg_audit
+                Docs</a>
+            </div>
+          </div>
+
+          <div class="resources-card">
+            <h4 style="margin-bottom: 4px;">📱 Project Verification & Artifacts</h4>
+            <div class="qr-placeholders">
+              <div class="qr-box">
+                <div class="qr-icon">📦</div>
+                <strong>GitHub Repo</strong>
+                <div>Clean Monorepo</div>
+              </div>
+              <div class="qr-box">
+                <div class="qr-icon">🌐</div>
+                <strong>Live Prototype</strong>
+                <div>Web PWA Demo</div>
+              </div>
+              <div class="qr-box">
+                <div class="qr-icon">🎥</div>
+                <strong>Demo Video</strong>
+                <div>3-Min Walkthrough</div>
+              </div>
+            </div>
+            <div style="font-size: 0.65rem; color: #64748B; margin-top: 6px; text-align: center;">
+              <strong>Team AnnSetu</strong> • Problem Statement: SIH-2026 (DA&FW)
+            </div>
+          </div>
+        </div>
+
+        <!-- Closing Punchline -->
+        <div class="closing-banner">
+          “AnnSetu demonstrates a practical path from token issuance to predictable arrival and transparent payment.”
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <div class="citations">
+          <span>Standards: MeitY Open API Policy • Open Data Enablement • WCAG 2.1 AA Accessibility Standards</span>
+        </div>
+        <div>Slide 5 of 5</div>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- Interactive Slide Controller Script -->
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 5;
+
+    function showSlide(index) {
+      if (index < 1) index = 1;
+      if (index > totalSlides) index = totalSlides;
+      currentSlide = index;
+
+      document.querySelectorAll('.slide').forEach((slide, idx) => {
+        if (idx + 1 === currentSlide) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+
+      document.getElementById('slideIndicator').innerText = `${currentSlide} / ${totalSlides}`;
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) {
+        showSlide(currentSlide + 1);
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) {
+        showSlide(currentSlide - 1);
+      }
+    }
+
+    function toggleFullScreen() {
+      const elem = document.getElementById('deckContainer');
+      if (!document.fullscreenElement) {
+        elem.requestFullscreen().catch(err => {
+          alert(`Error attempting to enable full-screen: ${err.message}`);
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    // Keyboard navigation: Left/Right arrow keys & Spacebar
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        nextSlide();
+      } else if (e.key === 'ArrowLeft') {
+        prevSlide();
+      } else if (e.key.toLowerCase() === 'f') {
+        toggleFullScreen();
+      }
+    });
+  </script>
+</body>
+
+</html>

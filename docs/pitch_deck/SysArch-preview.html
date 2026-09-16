@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnnSetu Architecture — Interactive Markdy Visualizer</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0b0f19;
+      color: #f3f4f6;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+    header {
+      padding: 12px 20px;
+      background: #111827;
+      border-bottom: 1px solid #1f2937;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .badge {
+      background: #065f46;
+      color: #34d399;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      border: 1px solid #059669;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    h1 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #f9fafb;
+    }
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    button, select {
+      background: #1f2937;
+      color: #e5e7eb;
+      border: 1px solid #374151;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    button:hover, select:hover {
+      background: #374151;
+      border-color: #4b5563;
+      color: #fff;
+    }
+    button.primary {
+      background: #059669;
+      border-color: #10b981;
+      color: white;
+    }
+    button.primary:hover {
+      background: #047857;
+    }
+    #diagram-container {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: #0b0f19;
+    }
+    #error-box {
+      display: none;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #7f1d1d;
+      color: #fecaca;
+      border: 1px solid #b91c1c;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 13px;
+      z-index: 999;
+      max-width: 600px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span class="badge">Markdy v1.2</span>
+      <h1>AnnSetu (अन्न सेतु) — System Architecture Visualizer</h1>
+    </div>
+    <div class="controls">
+      <select id="theme-select" title="Switch Theme">
+        <option value="auto">Theme: Auto</option>
+        <option value="nebula">Theme: Nebula (Dark)</option>
+        <option value="midnight">Theme: Midnight</option>
+        <option value="blueprint">Theme: Blueprint</option>
+        <option value="terminal">Theme: Terminal</option>
+        <option value="paper">Theme: Paper (Light)</option>
+        <option value="editorial">Theme: Editorial</option>
+        <option value="sketchy">Theme: Sketchy</option>
+      </select>
+      <button id="btn-replay" class="primary" title="Restart Storyboard Animation">↺ Replay</button>
+      <button id="btn-pause" title="Play / Pause">⏸ Pause</button>
+    </div>
+  </header>
+
+  <div id="diagram-container"></div>
+  <div id="error-box"></div>
+
+  <script type="module">
+    import { createDiagram } from "https://esm.sh/@markdy/renderer-dom@1.5.0";
+
+    const markdyCode = `# ─────────────────────────────────────────────────────────────────────────────
+# 1. Scene Directives & Configuration
+# ─────────────────────────────────────────────────────────────────────────────
+scene "AnnSetu — Smart Farmer Procurement & Queue Platform Architecture" theme=auto
+layout LR
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 2. Semantic Node Declarations (<kind> <Id> ["Display Label"])
+# ─────────────────────────────────────────────────────────────────────────────
+mobile FarmerApp "Farmer PWA (App/Web)"
+mobile FeaturePhone "Feature Phone (USSD/IVR)"
+browser MandiCounter "Mandi Staff Terminal"
+browser AdminDashboard "State/Nodal Dashboard"
+
+gateway ApiGateway "API Gateway & Rate Limiter"
+gateway UssdGateway "USSD / IVR Telco Gateway"
+
+service CoreAPI "Core API (Spring Boot / NestJS)"
+service RealtimeService "Realtime Queue (Node.js)"
+worker OutboxWorker "Outbox & Notification Worker"
+
+database PostgresDB "PostgreSQL 16 (Tokens & Lots)"
+cache RedisCluster "Redis (Pub/Sub & Queue State)"
+queue QueueOutbox "Event Queue (BullMQ / Redis)"
+
+cloud AgriStack "AgriStack (Farmer ID & Land)"
+cloud Aadhaar "UIDAI Aadhaar e-KYC"
+cloud PfmsDbt "PFMS / DBT Payment Gateway"
+cloud StatePortals "State APMC Portals (ePaddy/MFMB)"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 3. Structural Grouping (Inline Member Lists)
+# ─────────────────────────────────────────────────────────────────────────────
+group clientTier "Access Channels": FarmerApp FeaturePhone MandiCounter AdminDashboard
+group edgeTier "Ingress Layer": ApiGateway UssdGateway
+group serviceTier "Application Core": CoreAPI RealtimeService OutboxWorker
+group dataTier "Data & State Engine": PostgresDB RedisCluster QueueOutbox
+group govAdapters "National & State Integrations": AgriStack Aadhaar PfmsDbt StatePortals
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 4. Animated Storyboard Beats (Sequential User Journeys)
+# ─────────────────────────────────────────────────────────────────────────────
+beat reveal "System Architecture Overview":
+  show $nodes stagger=35ms
+
+beat farmerBooking "Farmer Slot Booking & Identity Verification":
+  FarmerApp -> ApiGateway "POST /bookings (Slot & Crop)" -> CoreAPI "process_booking"
+  CoreAPI -> AgriStack "verify_farmer_id(land_quota)"
+  CoreAPI <- AgriStack "200 OK (Verified Quota)"
+  CoreAPI -> PostgresDB "INSERT INTO tokens (status: booked)"
+  CoreAPI -> RedisCluster "INCR center_slot_allocation"
+  FarmerApp <- ApiGateway "201 Created (Token #LDH-1001)"
+  glow FarmerApp color=#10b981
+
+beat ussdFlow "Feature Phone USSD/IVR Offline Booking":
+  FeaturePhone -> UssdGateway "Dial *99*26# (Interactive Menu)" -> CoreAPI "ussd_session_handler"
+  CoreAPI -> PostgresDB "SELECT slots & allocate"
+  CoreAPI ~> QueueOutbox "enqueue SMS confirmation"
+  FeaturePhone <- UssdGateway "Display Token # & SMS Dispatched"
+  glow FeaturePhone color=#38bdf8
+
+beat liveQueue "Real-Time Queue Telemetry & Broadcasting":
+  FarmerApp -> ApiGateway "WebSocket Connect (/queue)" -> RealtimeService "subscribe(center_id)"
+  RealtimeService -> RedisCluster "ZREVRANGE center_queue (Position)"
+  RealtimeService <- RedisCluster "Position: #3 (ETA: 22 mins)"
+  FarmerApp <- RealtimeService "Live Queue Broadcast: Token Ahead #2"
+  glow RealtimeService color=#38bdf8
+
+beat mandiProcurement "Mandi Weighbridge, QC & Shetkari Pavti Issuance":
+  MandiCounter -> ApiGateway "POST /weighing & /qc" -> CoreAPI "record_procurement"
+  CoreAPI -> PostgresDB "UPDATE token (gross, tare, net_weight, moisture: 12%)"
+  MandiCounter <- ApiGateway "200 OK (Official Shetkari Pavti W28244-260814-3)"
+  glow MandiCounter color=#f59e0b
+
+beat dbtSettlement "PFMS / DBT Direct Benefit Transfer & Audit":
+  CoreAPI -> PostgresDB "UPDATE token (status: payment_processing)"
+  CoreAPI ~> QueueOutbox "publish(payment.initiate)"
+  QueueOutbox ~> OutboxWorker "consume job"
+  OutboxWorker -> PfmsDbt "Push DBT Batch (Scheme MSP-2026)"
+  OutboxWorker <- PfmsDbt "200 OK (UTR: PFMS2608143)"
+  OutboxWorker -> PostgresDB "UPDATE payment (status: PAID)"
+  FarmerApp <- OutboxWorker "Push Notification: ₹57,570 Credited via DBT"
+  glow PfmsDbt color=#10b981
+`;
+
+    const container = document.getElementById("diagram-container");
+    const errorBox = document.getElementById("error-box");
+    let diagram = null;
+    let isPlaying = true;
+
+    function renderDiagram(customTheme) {
+      if (diagram) {
+        diagram.destroy?.();
+      }
+      container.innerHTML = "";
+      errorBox.style.display = "none";
+
+      let source = markdyCode;
+      if (customTheme && customTheme !== "auto") {
+        source = source.replace(/theme=[a-z]+/i, `theme=${customTheme}`);
+      }
+
+      try {
+        diagram = createDiagram({
+          container,
+          code: source,
+          autoplay: true,
+          loop: true,
+          progressBar: true,
+        });
+      } catch (err) {
+        errorBox.textContent = "Markdy Error: " + (err.message || String(err));
+        errorBox.style.display = "block";
+      }
+    }
+
+    renderDiagram("auto");
+
+    document.getElementById("theme-select").addEventListener("change", (e) => {
+      renderDiagram(e.target.value);
+    });
+
+    document.getElementById("btn-replay").addEventListener("click", () => {
+      renderDiagram(document.getElementById("theme-select").value);
+    });
+
+    const pauseBtn = document.getElementById("btn-pause");
+    pauseBtn.addEventListener("click", () => {
+      if (diagram) {
+        if (isPlaying) {
+          diagram.pause?.();
+          pauseBtn.textContent = "▶ Play";
+          isPlaying = false;
+        } else {
+          diagram.play?.();
+          pauseBtn.textContent = "⏸ Pause";
+          isPlaying = true;
+        }
+      }
+    });
+  </script>
+</body>
+</html>

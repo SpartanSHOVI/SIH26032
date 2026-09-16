@@ -1,0 +1,114 @@
+{"kind":"deck","id":"pr/rmktl5","name":"Deck"}
+{"kind":"layout","layoutId":"433b0242-c55f-409d-ace4-ea14302345a9","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"80c1239c-4be2-46d3-b9bd-fe50a10b5e1b","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/8z6eoa","slide":1,"title":"AnnSetu","textShapes":75}
+{"kind":"textbox","id":"sh/z2d0rqpk","slide":1,"text":"AnnSetu","textPreview":"AnnSetu","textChars":7,"textLines":1,"bbox":[31,15,170,58]}
+{"kind":"textbox","id":"sh/k3mhkbq5","slide":1,"text":"TECHNICAL APPROACH","textPreview":"TECHNICAL APPROACH","textChars":18,"textLines":1,"bbox":[330,14,620,58]}
+{"kind":"shape","id":"sh/adkze183","slide":1,"bbox":[42,102,225,573]}
+{"kind":"shape","id":"sh/bet0n6po","slide":1,"bbox":[281,102,687,573]}
+{"kind":"shape","id":"sh/cz2hgbqt","slide":1,"bbox":[982,102,256,573]}
+{"kind":"textbox","id":"sh/x0bipg7e","slide":1,"text":"1. TECHNOLOGY STACK","textPreview":"1. TECHNOLOGY STACK","textChars":19,"textLines":1,"bbox":[48,108,213,30]}
+{"kind":"textbox","id":"sh/u94zq587","slide":1,"text":"2. SYSTEM FLOW  |  FARMER JOURNEY","textPreview":"2. SYSTEM FLOW  |  FARMER JOURNEY","textChars":33,"textLines":1,"bbox":[411,108,426,30]}
+{"kind":"textbox","id":"sh/vux0zaps","slide":1,"text":"3. IMPLEMENTATION METHODOLOGY","textPreview":"3. IMPLEMENTATION METHODOLOGY","textChars":29,"textLines":1,"bbox":[988,108,244,30]}
+{"kind":"textbox","id":"sh/f6dgn25w","slide":1,"text":"UI","textPreview":"UI","textChars":2,"textLines":1,"bbox":[55,156,43,43]}
+{"kind":"textbox","id":"sh/u54fexor","slide":1,"text":"Web experience","textPreview":"Web experience","textChars":14,"textLines":1,"bbox":[108,149,143,25]}
+{"kind":"textbox","id":"sh/h8vypcn2","slide":1,"text":"Next.js, React\nTanStack Query","textPreview":"Next.js, React | TanStack Query","textChars":29,"textLines":2,"bbox":[108,175,143,40]}
+{"kind":"shape","id":"sh/g7mxg76h","slide":1,"bbox":[53,224,199,0]}
+{"kind":"textbox","id":"sh/3axgrm58","slide":1,"text":"API","textPreview":"API","textChars":3,"textLines":1,"bbox":[55,241,43,43]}
+{"kind":"textbox","id":"sh/294fihon","slide":1,"text":"API and realtime","textPreview":"API and realtime","textChars":16,"textLines":1,"bbox":[108,234,143,25]}
+{"kind":"textbox","id":"sh/pcfytcne","slide":1,"text":"NestJS, REST\nSocket.IO","textPreview":"NestJS, REST | Socket.IO","textChars":22,"textLines":2,"bbox":[108,260,143,40]}
+{"kind":"shape","id":"sh/4b6xk76t","slide":1,"bbox":[53,309,199,0]}
+{"kind":"textbox","id":"sh/rexgvm54","slide":1,"text":"DB","textPreview":"DB","textChars":2,"textLines":1,"bbox":[55,326,43,43]}
+{"kind":"textbox","id":"sh/qdozmhoj","slide":1,"text":"Data and jobs","textPreview":"Data and jobs","textChars":13,"textLines":1,"bbox":[108,319,143,25]}
+{"kind":"textbox","id":"sh/mt8jel8r","slide":1,"text":"PostgreSQL, Prisma\nRedis, BullMQ","textPreview":"PostgreSQL, Prisma | Redis, BullMQ","textChars":32,"textLines":2,"bbox":[108,345,143,40]}
+{"kind":"shape","id":"sh/nu10nqpc","slide":1,"bbox":[53,394,199,0]}
+{"kind":"textbox","id":"sh/8va1gvqx","slide":1,"text":"SEC","textPreview":"SEC","textChars":3,"textLines":1,"bbox":[55,411,43,43]}
+{"kind":"textbox","id":"sh/9wjip07i","slide":1,"text":"Security","textPreview":"Security","textChars":8,"textLines":1,"bbox":[108,404,143,25]}
+{"kind":"textbox","id":"sh/y58jal8v","slide":1,"text":"JWT, RBAC, Argon2\nZod, audit controls","textPreview":"JWT, RBAC, Argon2 | Zod, audit controls","textChars":37,"textLines":2,"bbox":[108,430,143,40]}
+{"kind":"shape","id":"sh/z6h0j6pg","slide":1,"bbox":[53,479,199,0]}
+{"kind":"textbox","id":"sh/07q1cbq1","slide":1,"text":"IO","textPreview":"IO","textChars":2,"textLines":1,"bbox":[55,496,43,43]}
+{"kind":"textbox","id":"sh/l8zilg7m","slide":1,"text":"Inclusive access","textPreview":"Inclusive access","textChars":16,"textLines":1,"bbox":[108,489,143,25]}
+{"kind":"textbox","id":"sh/i1cjm58z","slide":1,"text":"PWA, SMS, USSD\nIVR and TTS simulation","textPreview":"PWA, SMS, USSD | IVR and TTS simulation","textChars":37,"textLines":2,"bbox":[108,515,143,40]}
+{"kind":"shape","id":"sh/j2lkvapk","slide":1,"bbox":[53,564,199,0]}
+{"kind":"textbox","id":"sh/twnml4r2","slide":1,"text":"CI","textPreview":"CI","textChars":2,"textLines":1,"bbox":[55,581,43,43]}
+{"kind":"textbox","id":"sh/svelczah","slide":1,"text":"Delivery","textPreview":"Delivery","textChars":8,"textLines":1,"bbox":[108,574,143,25]}
+{"kind":"textbox","id":"sh/7u54ju9w","slide":1,"text":"pnpm monorepo\nDocker Compose, CI","textPreview":"pnpm monorepo | Docker Compose, CI","textChars":32,"textLines":2,"bbox":[108,600,143,40]}
+{"kind":"textbox","id":"sh/6tw3a9sb","slide":1,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[300,157,42,42]}
+{"kind":"textbox","id":"sh/5s3mh4rq","slide":1,"text":"Plan\ncapacity","textPreview":"Plan | capacity","textChars":13,"textLines":2,"bbox":[290,202,62,43]}
+{"kind":"shape","id":"sh/krul8za5","slide":1,"bbox":[352,170,18,15]}
+{"kind":"textbox","id":"sh/jql4fu9k","slide":1,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[382,157,42,42]}
+{"kind":"textbox","id":"sh/ipc36psz","slide":1,"text":"Login or\nassist","textPreview":"Login or | assist","textChars":15,"textLines":2,"bbox":[372,202,62,43]}
+{"kind":"shape","id":"sh/po7mtoru","slide":1,"bbox":[434,170,18,15]}
+{"kind":"textbox","id":"sh/4nylkjap","slide":1,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[464,157,42,42]}
+{"kind":"textbox","id":"sh/wrmtkja5","slide":1,"text":"Book\nslot","textPreview":"Book | slot","textChars":9,"textLines":2,"bbox":[454,202,62,43]}
+{"kind":"shape","id":"sh/xsvudorq","slide":1,"bbox":[516,170,18,15]}
+{"kind":"textbox","id":"sh/a54bitsz","slide":1,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[546,157,42,42]}
+{"kind":"textbox","id":"sh/b6dcbe9k","slide":1,"text":"Track\nqueue","textPreview":"Track | queue","textChars":11,"textLines":2,"bbox":[536,202,62,43]}
+{"kind":"shape","id":"sh/kvmdo3ah","slide":1,"bbox":[598,170,18,15]}
+{"kind":"textbox","id":"sh/lwfuh8rm","slide":1,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[628,157,42,42]}
+{"kind":"textbox","id":"sh/yt4vmtsb","slide":1,"text":"Gate\nentry","textPreview":"Gate | entry","textChars":10,"textLines":2,"bbox":[618,202,62,43]}
+{"kind":"shape","id":"sh/judcfy9w","slide":1,"bbox":[680,170,18,15]}
+{"kind":"textbox","id":"sh/8z6ds3qd","slide":1,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[710,157,42,42]}
+{"kind":"textbox","id":"sh/t0ful8ry","slide":1,"text":"Weigh\nand QC","textPreview":"Weigh | and QC","textChars":12,"textLines":2,"bbox":[700,202,62,43]}
+{"kind":"shape","id":"sh/3uhwr2t0","slide":1,"bbox":[762,170,18,15]}
+{"kind":"textbox","id":"sh/it8fihcf","slide":1,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[792,157,42,42]}
+{"kind":"textbox","id":"sh/5gjetcb6","slide":1,"text":"Accept\nlot","textPreview":"Accept | lot","textChars":10,"textLines":2,"bbox":[782,202,62,43]}
+{"kind":"shape","id":"sh/4vaxk7ul","slide":1,"bbox":[844,170,18,15]}
+{"kind":"textbox","id":"sh/vqhwn2t4","slide":1,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[874,157,42,42]}
+{"kind":"textbox","id":"sh/up8fexcj","slide":1,"text":"Settle\npayment","textPreview":"Settle | payment","textChars":14,"textLines":2,"bbox":[864,202,62,43]}
+{"kind":"textbox","id":"sh/hszepcbu","slide":1,"text":"SYSTEM ARCHITECTURE","textPreview":"SYSTEM ARCHITECTURE","textChars":19,"textLines":1,"bbox":[485,258,280,28]}
+{"kind":"textbox","id":"sh/grqxg7up","slide":1,"text":"ACCESS","textPreview":"ACCESS","textChars":6,"textLines":1,"bbox":[301,293,78,18]}
+{"kind":"shape","id":"sh/zm1gjmt8","slide":1,"bbox":[300,315,145,36]}
+{"kind":"textbox","id":"sh/elsfq1sn","slide":1,"text":"Farmer PWA","textPreview":"Farmer PWA","textChars":10,"textLines":1,"bbox":[307,320,131,26]}
+{"kind":"shape","id":"sh/ahwzilcv","slide":1,"bbox":[462,315,145,36]}
+{"kind":"textbox","id":"sh/bi50rqdg","slide":1,"text":"Phone / USSD / IVR","textPreview":"Phone / USSD / IVR","textChars":18,"textLines":1,"bbox":[469,320,131,26]}
+{"kind":"shape","id":"sh/wjehkvu1","slide":1,"bbox":[624,315,145,36]}
+{"kind":"textbox","id":"sh/xknit0vm","slide":1,"text":"Center console","textPreview":"Center console","textChars":14,"textLines":1,"bbox":[631,320,131,26]}
+{"kind":"shape","id":"sh/ylwjm5c7","slide":1,"bbox":[786,315,145,36]}
+{"kind":"textbox","id":"sh/j6p0vadc","slide":1,"text":"Admin dashboard","textPreview":"Admin dashboard","textChars":15,"textLines":1,"bbox":[793,320,131,26]}
+{"kind":"shape","id":"sh/k7y1ofux","slide":1,"bbox":[310,383,192,122]}
+{"kind":"textbox","id":"sh/l87ixkvi","slide":1,"text":"Next.js PWA","textPreview":"Next.js PWA","textChars":11,"textLines":1,"bbox":[327,394,158,27]}
+{"kind":"textbox","id":"sh/epcza1wn","slide":1,"text":"Farmer, center and admin portals\nOffline application shell\nPublic phone/token tracker","textPreview":"Farmer, center and admin portals | Offline application shell | Public phone/token tracker","textChars":85,"textLines":3,"bbox":[327,426,158,64]}
+{"kind":"shape","id":"sh/zal0j6d8","slide":1,"bbox":[515,428,36,26]}
+{"kind":"textbox","id":"sh/hgbu58j2","slide":1,"text":"REST + realtime","textPreview":"REST + realtime","textChars":15,"textLines":1,"bbox":[499,459,68,22]}
+{"kind":"shape","id":"sh/gf2tc3ih","slide":1,"bbox":[563,371,374,148]}
+{"kind":"textbox","id":"sh/fetc3y1w","slide":1,"text":"NestJS platform core","textPreview":"NestJS platform core","textChars":20,"textLines":1,"bbox":[583,382,334,29]}
+{"kind":"shape","id":"sh/udkbat0b","slide":1,"bbox":[580,426,0,28]}
+{"kind":"textbox","id":"sh/pkvu9sjy","slide":1,"text":"Identity","textPreview":"Identity","textChars":8,"textLines":1,"bbox":[590,421,155,19]}
+{"kind":"textbox","id":"sh/4jmdgnit","slide":1,"text":"RBAC, tokens, privacy","textPreview":"RBAC, tokens, privacy","textChars":21,"textLines":1,"bbox":[590,440,155,18]}
+{"kind":"shape","id":"sh/3idc7i18","slide":1,"bbox":[756,426,0,28]}
+{"kind":"textbox","id":"sh/2hkbed0n","slide":1,"text":"Booking + queue","textPreview":"Booking + queue","textChars":15,"textLines":1,"bbox":[766,421,155,19]}
+{"kind":"textbox","id":"sh/5oruxoju","slide":1,"text":"atomic slots, live ETA","textPreview":"atomic slots, live ETA","textChars":22,"textLines":1,"bbox":[766,440,155,18]}
+{"kind":"shape","id":"sh/knit4j29","slide":1,"bbox":[580,469,0,28]}
+{"kind":"textbox","id":"sh/cbepon6t","slide":1,"text":"Procurement","textPreview":"Procurement","textChars":11,"textLines":1,"bbox":[590,464,155,19]}
+{"kind":"textbox","id":"sh/dwnqhsne","slide":1,"text":"gate, weigh, QC, decision","textPreview":"gate, weigh, QC, decision","textChars":25,"textLines":1,"bbox":[590,483,155,18]}
+{"kind":"shape","id":"sh/q9w7mdon","slide":1,"bbox":[756,469,0,28]}
+{"kind":"textbox","id":"sh/ba58fi58","slide":1,"text":"Payments + admin","textPreview":"Payments + admin","textChars":16,"textLines":1,"bbox":[766,464,155,19]}
+{"kind":"textbox","id":"sh/o7epk36h","slide":1,"text":"settlement, MSP, analytics","textPreview":"settlement, MSP, analytics","textChars":26,"textLines":1,"bbox":[766,483,155,18]}
+{"kind":"textbox","id":"sh/p8n6d8n2","slide":1,"text":"DATA AND EVENTS","textPreview":"DATA AND EVENTS","textChars":15,"textLines":1,"bbox":[301,530,130,18]}
+{"kind":"shape","id":"sh/25c7idor","slide":1,"bbox":[300,552,199,65]}
+{"kind":"textbox","id":"sh/36loby5c","slide":1,"text":"PostgreSQL + Prisma","textPreview":"PostgreSQL + Prisma","textChars":19,"textLines":1,"bbox":[312,558,175,22]}
+{"kind":"textbox","id":"sh/83ypw761","slide":1,"text":"transactions and audit","textPreview":"transactions and audit","textChars":22,"textLines":1,"bbox":[312,582,175,25]}
+{"kind":"shape","id":"sh/947qpcnm","slide":1,"bbox":[517,552,199,65]}
+{"kind":"textbox","id":"sh/3atkbqt0","slide":1,"text":"Redis","textPreview":"Redis","textChars":5,"textLines":1,"bbox":[529,558,175,22]}
+{"kind":"textbox","id":"sh/i9kj25cf","slide":1,"text":"cache, rate limits, pub/sub","textPreview":"cache, rate limits, pub/sub","textChars":27,"textLines":1,"bbox":[529,582,175,25]}
+{"kind":"shape","id":"sh/5wv2d0bq","slide":1,"bbox":[734,552,199,65]}
+{"kind":"textbox","id":"sh/4bm14vul","slide":1,"text":"BullMQ + outbox","textPreview":"BullMQ + outbox","textChars":15,"textLines":1,"bbox":[746,558,175,22]}
+{"kind":"textbox","id":"sh/rydkfatw","slide":1,"text":"retry and dead-letter queue","textPreview":"retry and dead-letter queue","textChars":27,"textLines":1,"bbox":[746,582,175,25]}
+{"kind":"shape","id":"sh/qx4j65cb","slide":1,"bbox":[300,629,637,31]}
+{"kind":"textbox","id":"sh/d0v21kb2","slide":1,"text":"ADAPTER BOUNDARY   AgriStack / Aadhaar demo   State portals   PFMS mock   Translation fallback","textPreview":"ADAPTER BOUNDARY   AgriStack / Aadhaar demo   State portals   PFMS mock   Translation fallback","textChars":94,"textLines":1,"bbox":[315,634,607,21]}
+{"kind":"shape","id":"sh/szm18fuh","slide":1,"bbox":[993,154,234,150]}
+{"kind":"textbox","id":"sh/729036ts","slide":1,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[1008,167,34,34]}
+{"kind":"textbox","id":"sh/610julc7","slide":1,"text":"FARMER ACCESS","textPreview":"FARMER ACCESS","textChars":13,"textLines":1,"bbox":[1051,166,163,35]}
+{"kind":"textbox","id":"sh/z29032t4","slide":1,"text":"Login or assisted booking\nChoose center and slot\nTrack by account, mobile or token\nView queue, lot and payment","textPreview":"Login or assisted booking | Choose center and slot | Track by account, mobile or token | View queue, lot and payment","textChars":110,"textLines":4,"bbox":[1010,208,202,82]}
+{"kind":"shape","id":"sh/yh0jaxcj","slide":1,"bbox":[993,320,234,150]}
+{"kind":"textbox","id":"sh/l4ri5cba","slide":1,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1008,333,34,34]}
+{"kind":"textbox","id":"sh/k3i1c7up","slide":1,"text":"CENTER OPERATIONS","textPreview":"CENTER OPERATIONS","textChars":17,"textLines":1,"bbox":[1051,332,163,35]}
+{"kind":"textbox","id":"sh/bep0z2ts","slide":1,"text":"Plan slots and assist bookings\nCall next, gate entry, weigh and inspect\nAccept or reject the lot\nDBT for registered, cash for assisted","textPreview":"Plan slots and assist bookings | Call next, gate entry, weigh and inspect | Accept or reject the lot | DBT for registered, cash for assisted","textChars":134,"textLines":4,"bbox":[1010,374,202,82]}
+{"kind":"shape","id":"sh/adgz6xcn","slide":1,"bbox":[993,486,234,150]}
+{"kind":"textbox","id":"sh/xgri1cby","slide":1,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1008,499,34,34]}
+{"kind":"textbox","id":"sh/cfyh87ud","slide":1,"text":"ADMIN AND GOVERNANCE","textPreview":"ADMIN AND GOVERNANCE","textChars":20,"textLines":1,"bbox":[1051,498,163,35]}
+{"kind":"textbox","id":"sh/vat0bmtc","slide":1,"text":"Manage centers, MSP and commodities\nForecast demand and rebalance capacity\nReview KPIs, audits and failed jobs\nHandle consent withdrawal and erasure","textPreview":"Manage centers, MSP and commodities | Forecast demand and rebalance capacity | Review KPIs, audits and failed jobs | Handle consent withd...","textChars":148,"textLines":4,"bbox":[1010,540,202,82]}
+{"kind":"textbox","id":"sh/u9kjihcr","slide":1,"text":"Government and communication integrations run as adapter-ready simulations in the SIH demo","textPreview":"Government and communication integrations run as adapter-ready simulations in the SIH demo","textChars":90,"textLines":1,"bbox":[42,688,1196,16]}
+{"kind":"image","id":"im/cbmtc7al","slide":1,"name":"","alt":"Smart India Hackathon 2026 logo","bbox":[1022,5,230,82]}
+{"kind":"notes","id":"nt/8z6eoa","slide":1,"text":"Pitch cue: The current AnnSetu implementation uses a single pnpm monorepo with a Next.js PWA and a NestJS platform core. PostgreSQL handles transactional records, Redis supports cache, rate limits and realtime distribution, and BullMQ processes outbox jobs with retry and dead-letter handling.\n\nFarmer journey: capacity planning, login or assisted verification, atomic slot booking, queue tracking, gate entry, weighing and quality inspection, lot decision, then settlement. Assisted bookings can be tracked without an account using the mobile or token number.\n\nPayment rule: registered farmers may follow the PFMS/DBT-compatible simulated path. Assistant bookings do not collect verified bank details and therefore allow cash settlement only.\n\nEvidence: docs/pitch_deck/FEATURE_VALIDATION_CURRENT_CODEBASE.md; apps/web/package.json; apps/api/package.json; apps/api/src/modules/booking/booking.controller.ts; apps/api/src/modules/queue/queue.service.ts; apps/api/src/modules/payments/payment-policy.ts; apps/web/src/screens/PublicBookingTracking.tsx; apps/web/src/screens/CenterDashboard.tsx.\n\nQualification: government, SMS, USSD, IVR and translation integrations use adapter-ready mocks or local fallbacks in the SIH demo. No version numbers appear on the slide by request."}

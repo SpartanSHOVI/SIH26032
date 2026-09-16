@@ -1,0 +1,125 @@
+services:
+  postgres:
+    image: postgres:16.4
+    container_name: annsetu-postgres
+    environment:
+      POSTGRES_DB: annsetu
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d annsetu"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - annsetu-network
+
+  redis:
+    image: redis:7.2.4-alpine
+    container_name: annsetu-redis
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "PING"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+    networks:
+      - annsetu-network
+
+  spring-boot:
+    profiles: ["legacy"]
+    build:
+      context: .
+      dockerfile: spring-boot/Dockerfile
+    container_name: annsetu-spring-boot
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      DB_URL: jdbc:postgresql://postgres:5432/annsetu
+      DB_USERNAME: postgres
+      DB_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      REDIS_URL: redis://redis:6379
+      JWT_SECRET: ${JWT_SECRET:-your-super-secret-jwt-key-change-in-production-min-32-chars}
+      MOCK_OTP_ENABLED: ${MOCK_OTP_ENABLED:-true}
+      AGRISTACK_SEED_COUNT: ${AGRISTACK_SEED_COUNT:-1000}
+      SERVER_PORT: 8080
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "code=$$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/api/v1/actuator/health); test \"$$code\" = 200 -o \"$$code\" = 302"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - annsetu-network
+
+  nodejs:
+    profiles: ["legacy"]
+    build:
+      context: .
+      dockerfile: realtime-service/Dockerfile
+    container_name: annsetu-nodejs
+    environment:
+      PORT: 3001
+      REDIS_URL: redis://redis:6379
+      SPRING_BOOT_URL: http://spring-boot:8080
+      NODE_ENV: development
+    ports:
+      - "3001:3001"
+    depends_on:
+      redis:
+        condition: service_healthy
+      spring-boot:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    networks:
+      annsetu-network:
+        aliases:
+          - api
+
+  loadbalancer:
+    profiles: ["legacy"]
+    image: nginx:alpine
+    container_name: annsetu-loadbalancer
+    ports:
+      - "${LB_PORT:-80}:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      nodejs:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost/lb-health || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+    networks:
+      - annsetu-network
+
+volumes:
+  pgdata:
+  redis-data:
+
+networks:
+  annsetu-network:
+    driver: bridge

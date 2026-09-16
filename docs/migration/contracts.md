@@ -1,0 +1,59 @@
+# Legacy route inventory
+
+Prefix: /api/v1. Controller source and frontend services/api.ts are authoritative. Security changes replace mock credentials with cookies and enforce ownership.
+
+- `AdminController.java`: `@RequestMapping("/admin")`
+- `AdminController.java`: `@GetMapping("/overview")`
+- `AdminController.java`: `@GetMapping("/centers")`
+- `AdminController.java`: `@GetMapping("/farmers")`
+- `AdminController.java`: `@GetMapping("/centers/{centerId}/predict-demand")`
+- `AdminController.java`: `@PostMapping("/centers/{centerId}/generate-slots")`
+- `AdminController.java`: `@GetMapping("/analytics")`
+- `AdminController.java`: `@PostMapping("/rebalance-mandi")`
+- `CenterController.java`: `@RequestMapping`
+- `CenterController.java`: `@GetMapping("/centers/{centerId}/queue")`
+- `CenterController.java`: `@GetMapping("/centers/{centerId}/analytics")`
+- `CenterController.java`: `@PostMapping("/centers/{centerId}/call-next")`
+- `CenterController.java`: `@PatchMapping("/tokens/{tokenId}/status")`
+- `CenterController.java`: `@PatchMapping("/tokens/{tokenId}/payment")`
+- `CenterController.java`: `@PostMapping({"/centers/{centerId}/announcements", "/centers/{centerId}/announcement"})`
+- `CenterController.java`: `@GetMapping("/centers/{centerId}/announcements")`
+- `CenterController.java`: `@GetMapping("/messages")`
+- `CenterController.java`: `@PostMapping("/centers/operator/login")`
+- `LocationController.java`: `@RequestMapping("/locations")`
+- `LocationController.java`: `@GetMapping("/states")`
+- `LocationController.java`: `@GetMapping("/districts")`
+- `LocationController.java`: `@GetMapping("/classifications")`
+- `LocationController.java`: `@GetMapping("/centers")`
+- `AuthController.java`: `@RequestMapping`
+- `AuthController.java`: `@PostMapping("/auth/register")`
+- `AuthController.java`: `@PostMapping("/auth/login")`
+- `AuthController.java`: `@PostMapping({"/auth/request-otp", "/auth/send-otp"})`
+- `AuthController.java`: `@PostMapping("/auth/verify-otp")`
+- `AuthController.java`: `@GetMapping({"/auth/profile", "/farmers/{id}"})`
+- `AuthController.java`: `@PatchMapping({"/auth/profile", "/farmers/{id}"})`
+- `AuthController.java`: `@GetMapping("/farmers/lookup")`
+- `IvrController.java`: `@RequestMapping`
+- `IvrController.java`: `@PostMapping("/ivr/call")`
+- `IvrController.java`: `@GetMapping("/ivr/alerts")`
+- `ProcurementController.java`: `@RequestMapping("/procurement")`
+- `ProcurementController.java`: `@GetMapping("/{bookingId}")`
+- `ProcurementController.java`: `@GetMapping("/my")`
+- `UssdController.java`: `@RequestMapping`
+- `UssdController.java`: `@PostMapping(value = "/ussd", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)`
+- `UssdController.java`: `@PostMapping(value = "/ussd", consumes = {MediaType.APPLICATION_FORM_URLENCODED_VALUE, MediaType.ALL_VALUE}, produces = MediaType.TEXT_PLAIN_VALUE)`
+- `UssdController.java`: `@GetMapping(value = "/ussd", produces = MediaType.TEXT_PLAIN_VALUE)`
+- `BookingController.java`: `@RequestMapping`
+- `BookingController.java`: `@GetMapping({"/bookings/centers", "/centers"})`
+- `BookingController.java`: `@GetMapping({"/centers/{centerId}/slots", "/bookings/availability"})`
+- `BookingController.java`: `@PostMapping({"/tokens/book", "/bookings"})`
+- `BookingController.java`: `@PostMapping("/tokens/call-book")`
+- `BookingController.java`: `@PostMapping("/tokens/{tokenId}/running-late")`
+- `BookingController.java`: `@GetMapping("/bookings/my")`
+- `QueueController.java`: `@RequestMapping`
+- `QueueController.java`: `@GetMapping({"/tokens/{tokenId}", "/queue/{tokenId}"})`
+- `QueueController.java`: `@GetMapping("/tokens/lookup")`
+- `QueueController.java`: `@GetMapping({"/farmers/{farmerId}/notifications", "/notifications"})`
+- `PaymentController.java`: `@RequestMapping("/payments")`
+- `PaymentController.java`: `@GetMapping("/{procurementLotId}")`
+- `PaymentController.java`: `@GetMapping("/my")`

@@ -1,0 +1,436 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["partialIndexes"]
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model app_accounts {
+  id               String             @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  login            String             @unique @db.VarChar(120)
+  password_hash    String
+  role             String             @db.VarChar(30)
+  farmer_id        String?            @unique(map: "app_account_farmer", where: raw("(farmer_id IS NOT NULL)")) @db.Uuid
+  center_id        String?            @db.Uuid
+  demo             Boolean            @default(false)
+  centers          centers?           @relation(fields: [center_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  farmers          farmers?           @relation(fields: [farmer_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  auth_sessions    auth_sessions[]
+  booking_requests booking_requests[]
+  domain_audit     domain_audit[]
+  tokens           tokens[]
+}
+
+model audit_events {
+  id             String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  correlation_id String   @db.VarChar(100)
+  entity_type    String   @db.VarChar(50)
+  entity_id      String   @db.Uuid
+  action         String   @db.VarChar(50)
+  actor_type     String   @db.VarChar(20)
+  actor_id       String   @db.VarChar(100)
+  before_state   Json?
+  after_state    Json?
+  metadata       Json?
+  created_at     DateTime @default(now()) @db.Timestamptz(6)
+
+  @@index([actor_type, actor_id], map: "idx_audit_actor")
+  @@index([correlation_id], map: "idx_audit_correlation")
+  @@index([created_at(sort: Desc)], map: "idx_audit_created")
+  @@index([entity_type, entity_id], map: "idx_audit_entity")
+}
+
+model auth_sessions {
+  id           String       @id @db.Uuid
+  account_id   String       @db.Uuid
+  refresh_hash String
+  csrf_hash    String
+  expires_at   DateTime     @db.Timestamptz(6)
+  revoked_at   DateTime?    @db.Timestamptz(6)
+  created_at   DateTime     @default(now()) @db.Timestamptz(6)
+  app_accounts app_accounts @relation(fields: [account_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model booking_requests {
+  account_id   String       @db.Uuid
+  key          String       @db.VarChar(128)
+  payload_hash String
+  response     Json?
+  app_accounts app_accounts @relation(fields: [account_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@id([account_id, key])
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model bookings {
+  id                String         @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  farmer_id         String         @db.Uuid
+  center_id         String         @db.Uuid
+  booking_date      DateTime       @db.Date
+  time_window_start DateTime       @db.Time(6)
+  time_window_end   DateTime       @db.Time(6)
+  token_number      Int?
+  status            String         @default("PENDING") @db.VarChar(20)
+  idempotency_key   String         @unique @db.VarChar(100)
+  created_at        DateTime       @default(now()) @db.Timestamptz(6)
+  updated_at        DateTime       @default(now()) @db.Timestamptz(6)
+  centers           centers        @relation(fields: [center_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  farmers           farmers        @relation(fields: [farmer_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  queue_entries     queue_entries?
+
+  @@unique([farmer_id, booking_date], map: "uq_farmer_date")
+  @@index([center_id, booking_date], map: "idx_bookings_center_date")
+  @@index([farmer_id], map: "idx_bookings_farmer_id")
+  @@index([idempotency_key], map: "idx_bookings_idempotency_key")
+  @@index([status], map: "idx_bookings_status")
+}
+
+model center_announcements {
+  id         BigInt    @id @default(autoincrement())
+  center_id  String    @db.Uuid
+  reason     String    @db.VarChar(120)
+  new_date   DateTime? @db.Date
+  new_time   String?   @db.VarChar(30)
+  message    String    @db.VarChar(500)
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+  centers    centers   @relation(fields: [center_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([center_id], map: "idx_announcements_center")
+}
+
+model centers {
+  id                                            String                 @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  code                                          String                 @unique @db.VarChar(50)
+  name                                          String                 @db.VarChar(255)
+  state_code                                    String                 @db.VarChar(10)
+  daily_capacity                                Int                    @default(100)
+  address                                       Json?
+  active                                        Boolean                @default(true)
+  created_at                                    DateTime               @default(now()) @db.Timestamptz(6)
+  updated_at                                    DateTime               @default(now()) @db.Timestamptz(6)
+  state                                         String?                @db.VarChar(120)
+  district                                      String?                @db.VarChar(120)
+  location                                      String?                @db.VarChar(255)
+  distance_km                                   Float?                 @default(5.0)
+  capacity_per_hour                             Int?                   @default(25)
+  counters                                      Int?                   @default(2)
+  avg_processing_min                            Float?                 @default(7.0)
+  market_id                                     Int?
+  state_id                                      Int?
+  district_id                                   Int?
+  classification                                String?                @default("APMC (Regulated)") @db.VarChar(50)
+  app_accounts                                  app_accounts[]
+  bookings                                      bookings[]
+  center_announcements                          center_announcements[]
+  daily_capacity_records                        daily_capacity[]
+  daily_demand                                  daily_demand[]
+  farmers_farmers_center_preference_idTocenters farmers[]              @relation("farmers_center_preference_idTocenters")
+  farmers_farmers_preferred_center_idTocenters  farmers[]              @relation("farmers_preferred_center_idTocenters")
+  message_logs                                  message_logs[]
+  procurement_lots                              procurement_lots[]
+  queue_entries                                 queue_entries[]
+  slots                                         slots[]
+  tokens                                        tokens[]
+
+  @@index([active], map: "idx_centers_active")
+  @@index([classification], map: "idx_centers_classification")
+  @@index([market_id], map: "idx_centers_market_id")
+  @@index([state_code], map: "idx_centers_state_code")
+  @@index([state, district], map: "idx_centers_state_district")
+}
+
+model daily_capacity {
+  id                  String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  center_id           String   @db.Uuid
+  capacity_date       DateTime @db.Date
+  max_capacity        Int
+  booked_count        Int      @default(0)
+  throughput_avg_7day Decimal? @db.Decimal(10, 2)
+  created_at          DateTime @default(now()) @db.Timestamptz(6)
+  updated_at          DateTime @default(now()) @db.Timestamptz(6)
+  centers             centers  @relation(fields: [center_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([center_id, capacity_date], map: "uq_center_date")
+  @@index([capacity_date], map: "idx_daily_capacity_date")
+}
+
+model daily_demand {
+  id           BigInt   @id @default(autoincrement())
+  center_id    String   @db.Uuid
+  demand_date  DateTime @db.Date
+  farmer_count Int
+  centers      centers  @relation(fields: [center_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@unique([center_id, demand_date], map: "uq_daily_demand_center_date")
+  @@index([center_id, demand_date], map: "idx_daily_demand_center")
+}
+
+model domain_audit {
+  id           BigInt        @id @default(autoincrement())
+  actor_id     String?       @db.Uuid
+  action       String
+  entity_id    String
+  details      Json          @default("{}")
+  created_at   DateTime      @default(now()) @db.Timestamptz(6)
+  app_accounts app_accounts? @relation(fields: [actor_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model event_outbox {
+  id           String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  event_type   String
+  aggregate_id String
+  payload      Json
+  attempts     Int       @default(0)
+  published_at DateTime? @db.Timestamptz(6)
+  available_at DateTime  @default(now()) @db.Timestamptz(6)
+  created_at   DateTime  @default(now()) @db.Timestamptz(6)
+
+  @@index([available_at], map: "outbox_pending", where: raw("(published_at IS NULL)"))
+}
+
+model farmers {
+  id                                            String             @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  farmer_id                                     String             @unique @db.VarChar(100)
+  aadhaar_hash                                  String?            @db.VarChar(64)
+  aadhaar_masked                                String?            @db.VarChar(20)
+  name                                          String             @db.VarChar(255)
+  phone_masked                                  String?            @db.VarChar(20)
+  state_code                                    String?            @db.VarChar(10)
+  preferred_language                            String             @default("hi") @db.VarChar(10)
+  center_preference_id                          String?            @db.Uuid
+  consent_given                                 Boolean            @default(false)
+  consent_timestamp                             DateTime?          @db.Timestamptz(6)
+  created_at                                    DateTime           @default(now()) @db.Timestamptz(6)
+  updated_at                                    DateTime           @default(now()) @db.Timestamptz(6)
+  mobile                                        String?            @db.VarChar(20)
+  password_hash                                 String?            @db.VarChar(128)
+  address                                       String?            @db.VarChar(255)
+  state                                         String?            @db.VarChar(120)
+  district                                      String?            @db.VarChar(120)
+  crop                                          String?            @db.VarChar(100)
+  quantity                                      Float?
+  bank_account                                  String?            @db.VarChar(40)
+  ifsc                                          String?            @db.VarChar(20)
+  preferred_center_id                           String?            @db.Uuid
+  language                                      String?            @default("English") @db.VarChar(20)
+  app_accounts                                  app_accounts?
+  bookings                                      bookings[]
+  centers_farmers_center_preference_idTocenters centers?           @relation("farmers_center_preference_idTocenters", fields: [center_preference_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  centers_farmers_preferred_center_idTocenters  centers?           @relation("farmers_preferred_center_idTocenters", fields: [preferred_center_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  message_logs                                  message_logs[]
+  notifications                                 notifications[]
+  payments                                      payments[]
+  procurement_lots                              procurement_lots[]
+  tokens                                        tokens[]
+
+  @@index([aadhaar_hash], map: "idx_farmers_aadhaar_hash")
+  @@index([farmer_id], map: "idx_farmers_farmer_id")
+  @@index([mobile], map: "idx_farmers_mobile")
+  @@index([name(ops: raw("gin_trgm_ops"))], map: "idx_farmers_name_trgm", type: Gin)
+  @@index([phone_masked], map: "idx_farmers_phone_masked")
+  @@index([state_code], map: "idx_farmers_state_code")
+}
+
+model message_logs {
+  id         BigInt    @id @default(autoincrement())
+  farmer_id  String?   @db.Uuid
+  center_id  String?   @db.Uuid
+  channel    String    @db.VarChar(20)
+  recipient  String    @db.VarChar(80)
+  message    String    @db.VarChar(500)
+  status     String?   @default("simulated-delivered") @db.VarChar(30)
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+  centers    centers?  @relation(fields: [center_id], references: [id], onUpdate: NoAction)
+  farmers    farmers?  @relation(fields: [farmer_id], references: [id], onUpdate: NoAction)
+
+  @@index([center_id], map: "idx_msg_logs_center")
+  @@index([farmer_id], map: "idx_msg_logs_farmer")
+}
+
+model notifications {
+  id                String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  farmer_id         String    @db.Uuid
+  type              String?   @db.VarChar(30)
+  channel           String?   @db.VarChar(20)
+  recipient         String?   @db.VarChar(100)
+  content           String?
+  language          String    @default("hi") @db.VarChar(10)
+  status            String    @default("PENDING") @db.VarChar(20)
+  sent_at           DateTime? @db.Timestamptz(6)
+  delivered_at      DateTime? @db.Timestamptz(6)
+  error_message     String?
+  created_at        DateTime  @default(now()) @db.Timestamptz(6)
+  message           String?   @db.VarChar(500)
+  notification_type String?   @default("general") @db.VarChar(40)
+  farmers           farmers   @relation(fields: [farmer_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@index([created_at(sort: Desc)], map: "idx_notifications_created")
+  @@index([farmer_id], map: "idx_notifications_farmer")
+  @@index([status], map: "idx_notifications_status")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model payments {
+  id                 String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  procurement_lot_id String           @unique @db.Uuid
+  farmer_id          String           @db.Uuid
+  amount             Decimal          @db.Decimal(15, 2)
+  status             String           @default("PENDING") @db.VarChar(20)
+  utr_reference      String?          @db.VarChar(100)
+  credited_at        DateTime?        @db.Timestamptz(6)
+  pfms_response      Json?
+  created_at         DateTime         @default(now()) @db.Timestamptz(6)
+  updated_at         DateTime         @default(now()) @db.Timestamptz(6)
+  farmers            farmers          @relation(fields: [farmer_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  procurement_lots   procurement_lots @relation(fields: [procurement_lot_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@index([farmer_id], map: "idx_payments_farmer")
+  @@index([status], map: "idx_payments_status")
+  @@index([utr_reference], map: "idx_payments_utr")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model procurement_lots {
+  id               String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  queue_entry_id   String        @unique @db.Uuid
+  farmer_id        String        @db.Uuid
+  center_id        String        @db.Uuid
+  gross_weight     Decimal?      @db.Decimal(10, 3)
+  tare_weight      Decimal?      @db.Decimal(10, 3)
+  net_weight       Decimal?      @db.Decimal(10, 3)
+  moisture_percent Decimal?      @db.Decimal(5, 2)
+  quality_pass     Boolean?
+  lot_status       String        @default("GATE_ENTRY") @db.VarChar(20)
+  staff_id         String?       @db.VarChar(100)
+  started_at       DateTime      @default(now()) @db.Timestamptz(6)
+  completed_at     DateTime?     @db.Timestamptz(6)
+  created_at       DateTime      @default(now()) @db.Timestamptz(6)
+  updated_at       DateTime      @default(now()) @db.Timestamptz(6)
+  payments         payments?
+  centers          centers       @relation(fields: [center_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  farmers          farmers       @relation(fields: [farmer_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  queue_entries    queue_entries @relation(fields: [queue_entry_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@index([center_id, lot_status], map: "idx_procurement_lots_center_status")
+  @@index([farmer_id], map: "idx_procurement_lots_farmer")
+  @@index([queue_entry_id], map: "idx_procurement_lots_queue_entry")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model queue_entries {
+  id               String            @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  booking_id       String            @unique @db.Uuid
+  center_id        String            @db.Uuid
+  queue_position   Int
+  status           String            @default("WAITING") @db.VarChar(20)
+  joined_at        DateTime          @default(now()) @db.Timestamptz(6)
+  called_at        DateTime?         @db.Timestamptz(6)
+  completed_at     DateTime?         @db.Timestamptz(6)
+  procurement_lots procurement_lots?
+  bookings         bookings          @relation(fields: [booking_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  centers          centers           @relation(fields: [center_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@index([booking_id], map: "idx_queue_entries_booking")
+  @@index([center_id, status], map: "idx_queue_entries_center_status")
+  @@index([center_id, queue_position], map: "idx_queue_entries_position", where: raw("((status)::text = ANY ((ARRAY['WAITING'::character varying, 'CALLED'::character varying])::text[]))"))
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model slots {
+  id           BigInt    @id @default(autoincrement())
+  center_id    String    @db.Uuid
+  slot_date    DateTime  @db.Date
+  start_time   String    @db.VarChar(10)
+  end_time     String    @db.VarChar(10)
+  total_slots  Int       @default(25)
+  booked_count Int       @default(0)
+  created_at   DateTime? @default(now()) @db.Timestamptz(6)
+  centers      centers   @relation(fields: [center_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  tokens       tokens[]
+
+  @@unique([center_id, slot_date, start_time], map: "uq_slot_center_date_time")
+  @@index([center_id, slot_date], map: "idx_slots_center_date")
+}
+
+model tokens {
+  id                BigInt        @id @default(autoincrement())
+  token_number      String        @unique @db.VarChar(30)
+  farmer_id         String        @db.Uuid
+  center_id         String        @db.Uuid
+  slot_id           BigInt
+  status            String?       @default("booked") @db.VarChar(30)
+  quantity_received Float?
+  reject_reason     String?       @db.VarChar(255)
+  booked_via        String?       @default("app") @db.VarChar(20)
+  running_late_used Boolean?      @default(false)
+  payment_method    String?       @default("pending") @db.VarChar(20)
+  payment_status    String?       @default("pending") @db.VarChar(20)
+  payment_amount    Decimal?      @db.Decimal(12, 2)
+  transaction_ref   String?       @db.VarChar(100)
+  payment_at        DateTime?     @db.Timestamptz(6)
+  created_at        DateTime?     @default(now()) @db.Timestamptz(6)
+  updated_at        DateTime?     @default(now()) @db.Timestamptz(6)
+  claimed_at        DateTime?     @db.Timestamptz(6)
+  claimed_by        String?       @db.Uuid
+  grace_until       DateTime?     @db.Timestamptz(6)
+  procured_at       DateTime?     @db.Timestamptz(6)
+  gross_weight      Decimal?      @db.Decimal(10, 3)
+  tare_weight       Decimal?      @db.Decimal(10, 3)
+  net_weight        Decimal?      @db.Decimal(10, 3)
+  moisture_percent  Decimal?      @db.Decimal(5, 2)
+  quality_pass      Boolean?
+  staff_id          String?       @db.VarChar(100)
+  centers           centers       @relation(fields: [center_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  app_accounts      app_accounts? @relation(fields: [claimed_by], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  farmers           farmers       @relation(fields: [farmer_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  slots             slots         @relation(fields: [slot_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([center_id, created_at], map: "idx_tokens_center_date")
+  @@index([farmer_id], map: "idx_tokens_farmer")
+  @@index([token_number], map: "idx_tokens_number")
+  @@index([status], map: "idx_tokens_status")
+  @@index([slot_id, created_at, id], map: "tokens_slot_order")
+  @@index([center_id, status], map: "idx_tokens_status_center")
+}
+
+model msp_rates {
+  id                String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  crop              String           @unique @db.VarChar(100)
+  category          String           @db.VarChar(50)
+  season            String           @db.VarChar(50)
+  price_per_quintal Decimal          @db.Decimal(10, 2)
+  bonus_per_quintal Decimal          @default(0.00) @db.Decimal(10, 2)
+  market_average    Decimal?         @db.Decimal(10, 2)
+  effective_date    DateTime         @default(dbgenerated("CURRENT_DATE")) @db.Date
+  is_active         Boolean          @default(true)
+  source            String           @default("CACP / CCEA Statutory Gazette") @db.VarChar(100)
+  updated_by        String           @default("SYSTEM") @db.VarChar(100)
+  notes             String?
+  created_at        DateTime         @default(now()) @db.Timestamptz(6)
+  updated_at        DateTime         @default(now()) @db.Timestamptz(6)
+  msp_audit_logs    msp_audit_logs[]
+
+  @@index([crop], map: "idx_msp_rates_crop")
+  @@index([category], map: "idx_msp_rates_category")
+  @@index([is_active], map: "idx_msp_rates_is_active")
+}
+
+model msp_audit_logs {
+  id             String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  msp_rate_id    String    @db.Uuid
+  crop           String    @db.VarChar(100)
+  previous_price Decimal   @db.Decimal(10, 2)
+  new_price      Decimal   @db.Decimal(10, 2)
+  previous_bonus Decimal   @default(0.00) @db.Decimal(10, 2)
+  new_bonus      Decimal   @default(0.00) @db.Decimal(10, 2)
+  reason         String    @db.VarChar(255)
+  updated_by     String    @db.VarChar(100)
+  changed_at     DateTime  @default(now()) @db.Timestamptz(6)
+  msp_rates      msp_rates @relation(fields: [msp_rate_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([crop], map: "idx_msp_audit_logs_crop")
+  @@index([changed_at(sort: Desc)], map: "idx_msp_audit_logs_changed_at")
+}

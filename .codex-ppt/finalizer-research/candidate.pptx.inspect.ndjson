@@ -1,0 +1,71 @@
+{"kind":"deck","id":"pr/1pxaga","name":"Deck"}
+{"kind":"layout","layoutId":"1dc5399e-060f-4a7d-93ca-38ca348c14b2","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"c7e201e8-227e-4aba-8abd-412cc98259e6","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/mnvuhq","slide":1,"title":"AnnSetu","textShapes":49}
+{"kind":"textbox","id":"sh/dwnq5crm","slide":1,"text":"AnnSetu","textPreview":"AnnSetu","textChars":7,"textLines":1,"bbox":[31,15,170,58]}
+{"kind":"textbox","id":"sh/q9wruxsv","slide":1,"text":"RESEARCH AND REFERENCES","textPreview":"RESEARCH AND REFERENCES","textChars":23,"textLines":1,"bbox":[263,14,740,60]}
+{"kind":"shape","id":"sh/o7e9snap","slide":1,"bbox":[40,111,18,18]}
+{"kind":"textbox","id":"sh/p8nq1sra","slide":1,"text":"Official ecosystem research","textPreview":"Official ecosystem research","textChars":27,"textLines":1,"bbox":[65,101,410,38]}
+{"kind":"shape","id":"sh/25crqxsz","slide":1,"bbox":[540,111,18,18]}
+{"kind":"textbox","id":"sh/3658zi9k","slide":1,"text":"Current prototype evidence","textPreview":"Current prototype evidence","textChars":26,"textLines":1,"bbox":[565,101,550,38]}
+{"kind":"textbox","id":"sh/83y94ra9","slide":1,"text":"AnnSetu\n\nQueue and procurement\ncoordination","textPreview":"AnnSetu |  | Queue and procurement | coordination","textChars":43,"textLines":4,"bbox":[203,300,145,145]}
+{"kind":"shape","id":"sh/947adwru","slide":1,"bbox":[169,154,213,73]}
+{"kind":"textbox","id":"sh/lk7a14bm","slide":1,"text":"SIH","textPreview":"SIH","textChars":3,"textLines":1,"bbox":[179,166,34,34]}
+{"kind":"textbox","id":"sh/0jytszu1","slide":1,"text":"SIH 26032","textPreview":"SIH 26032","textChars":9,"textLines":1,"bbox":[222,161,151,25]}
+{"kind":"textbox","id":"sh/zipszutg","slide":1,"text":"Booking, queue and payment visibility","textPreview":"Booking, queue and payment visibility","textChars":37,"textLines":1,"bbox":[222,185,151,37]}
+{"kind":"shape","id":"sh/yhgbqpcv","slide":1,"bbox":[35,255,162,78]}
+{"kind":"textbox","id":"sh/dw7axkba","slide":1,"text":"eN","textPreview":"eN","textChars":2,"textLines":1,"bbox":[45,267,34,34]}
+{"kind":"textbox","id":"sh/cvetofup","slide":1,"text":"e-NAM","textPreview":"e-NAM","textChars":5,"textLines":1,"bbox":[88,262,100,25]}
+{"kind":"textbox","id":"sh/bu5svatk","slide":1,"text":"Trading, lot progress and e-payments","textPreview":"Trading, lot progress and e-payments","textChars":36,"textLines":1,"bbox":[88,286,100,42]}
+{"kind":"shape","id":"sh/qtwbm5cz","slide":1,"bbox":[354,255,162,78]}
+{"kind":"textbox","id":"sh/hsru9obu","slide":1,"text":"ID","textPreview":"ID","textChars":2,"textLines":1,"bbox":[364,267,34,34]}
+{"kind":"textbox","id":"sh/writ0ju9","slide":1,"text":"AgriStack","textPreview":"AgriStack","textChars":9,"textLines":1,"bbox":[407,262,100,25]}
+{"kind":"textbox","id":"sh/g7alsrmh","slide":1,"text":"Farmer ID, UFSI and consent","textPreview":"Farmer ID, UFSI and consent","textChars":27,"textLines":1,"bbox":[407,286,100,42]}
+{"kind":"shape","id":"sh/18jmlcn2","slide":1,"bbox":[35,455,178,78]}
+{"kind":"textbox","id":"sh/e5s3qh4b","slide":1,"text":"₹","textPreview":"₹","textChars":1,"textLines":1,"bbox":[45,467,34,34]}
+{"kind":"textbox","id":"sh/f614jm5w","slide":1,"text":"PFMS / DBT","textPreview":"PFMS / DBT","textChars":10,"textLines":1,"bbox":[88,462,116,25]}
+{"kind":"textbox","id":"sh/s3qlo7ml","slide":1,"text":"Validation and settlement status","textPreview":"Validation and settlement status","textChars":32,"textLines":1,"bbox":[88,486,116,42]}
+{"kind":"shape","id":"sh/t4zmhcn6","slide":1,"bbox":[338,455,178,78]}
+{"kind":"textbox","id":"sh/6183mx4f","slide":1,"text":"DP","textPreview":"DP","textChars":2,"textLines":1,"bbox":[348,467,34,34]}
+{"kind":"textbox","id":"sh/r2h4f250","slide":1,"text":"DPDP","textPreview":"DPDP","textChars":4,"textLines":1,"bbox":[391,462,116,25]}
+{"kind":"textbox","id":"sh/4zqlk769","slide":1,"text":"Consent, privacy and user rights","textPreview":"Consent, privacy and user rights","textChars":32,"textLines":1,"bbox":[391,486,116,42]}
+{"kind":"shape","id":"sh/50zmdsnu","slide":1,"bbox":[64,559,423,45]}
+{"kind":"textbox","id":"sh/7ax4n2pw","slide":1,"text":"AnnSetu coordinates these systems through adapters","textPreview":"AnnSetu coordinates these systems through adapters","textChars":50,"textLines":1,"bbox":[82,570,387,22]}
+{"kind":"textbox","id":"sh/m9onux8b","slide":1,"text":"BK","textPreview":"BK","textChars":2,"textLines":1,"bbox":[548,162,44,44]}
+{"kind":"textbox","id":"sh/9cfmps7m","slide":1,"text":"Atomic booking","textPreview":"Atomic booking","textChars":14,"textLines":1,"bbox":[605,154,248,28]}
+{"kind":"textbox","id":"sh/8b65wnq1","slide":1,"text":"Capacity-safe transaction","textPreview":"Capacity-safe transaction","textChars":25,"textLines":1,"bbox":[605,183,248,28]}
+{"kind":"shape","id":"sh/vyh4r2ps","slide":1,"bbox":[605,219,245,0]}
+{"kind":"textbox","id":"sh/uxonyx87","slide":1,"text":"Q","textPreview":"Q","textChars":1,"textLines":1,"bbox":[885,162,44,44]}
+{"kind":"textbox","id":"sh/h0zmtc7y","slide":1,"text":"Live queue","textPreview":"Live queue","textChars":10,"textLines":1,"bbox":[942,154,248,28]}
+{"kind":"textbox","id":"sh/wzq507qd","slide":1,"text":"Position and wait estimate","textPreview":"Position and wait estimate","textChars":26,"textLines":1,"bbox":[942,183,248,28]}
+{"kind":"shape","id":"sh/j2hovmp4","slide":1,"bbox":[942,219,245,0]}
+{"kind":"textbox","id":"sh/i18n2h8j","slide":1,"text":"PH","textPreview":"PH","textChars":2,"textLines":1,"bbox":[548,267,44,44]}
+{"kind":"textbox","id":"sh/25g7ylwf","slide":1,"text":"Assisted access","textPreview":"Assisted access","textChars":15,"textLines":1,"bbox":[605,259,248,28]}
+{"kind":"textbox","id":"sh/36porqx0","slide":1,"text":"Mobile or token tracking","textPreview":"Mobile or token tracking","textChars":24,"textLines":1,"bbox":[605,288,248,28]}
+{"kind":"shape","id":"sh/47yp0vel","slide":1,"bbox":[605,324,245,0]}
+{"kind":"textbox","id":"sh/p87qt0f6","slide":1,"text":"QC","textPreview":"QC","textChars":2,"textLines":1,"bbox":[885,267,44,44]}
+{"kind":"textbox","id":"sh/q9072lwr","slide":1,"text":"Procurement journey","textPreview":"Procurement journey","textChars":19,"textLines":1,"bbox":[942,259,248,28]}
+{"kind":"textbox","id":"sh/ra98vqxc","slide":1,"text":"Gate, weigh, inspect, decide","textPreview":"Gate, weigh, inspect, decide","textChars":28,"textLines":1,"bbox":[942,288,248,28]}
+{"kind":"shape","id":"sh/cbip4veh","slide":1,"bbox":[942,324,245,0]}
+{"kind":"textbox","id":"sh/dcrqx0f2","slide":1,"text":"₹","textPreview":"₹","textChars":1,"textLines":1,"bbox":[548,372,44,44]}
+{"kind":"textbox","id":"sh/6dw7q1g7","slide":1,"text":"Payment policy","textPreview":"Payment policy","textChars":14,"textLines":1,"bbox":[605,364,248,28]}
+{"kind":"textbox","id":"sh/7e5oj6xs","slide":1,"text":"DBT mock or assisted cash","textPreview":"DBT mock or assisted cash","textChars":25,"textLines":1,"bbox":[605,393,248,28]}
+{"kind":"shape","id":"sh/98va54za","slide":1,"bbox":[605,429,245,0]}
+{"kind":"textbox","id":"sh/o729wzyp","slide":1,"text":"SEC","textPreview":"SEC","textChars":3,"textLines":1,"bbox":[885,372,44,44]}
+{"kind":"textbox","id":"sh/n6ts3uhk","slide":1,"text":"Security and privacy","textPreview":"Security and privacy","textChars":20,"textLines":1,"bbox":[942,364,248,28]}
+{"kind":"textbox","id":"sh/m5krupgz","slide":1,"text":"RBAC, masking and DPDP","textPreview":"RBAC, masking and DPDP","textChars":22,"textLines":1,"bbox":[942,393,248,28]}
+{"kind":"shape","id":"sh/xwva94zm","slide":1,"bbox":[942,429,245,0]}
+{"kind":"shape","id":"sh/wvmt0jy1","slide":1,"bbox":[548,476,642,128]}
+{"kind":"textbox","id":"sh/vuds7ehg","slide":1,"text":"LOAD-TEST EVIDENCE","textPreview":"LOAD-TEST EVIDENCE","textChars":18,"textLines":1,"bbox":[568,485,210,21]}
+{"kind":"textbox","id":"sh/a94ry9gv","slide":1,"text":"13 / 13","textPreview":"13 / 13","textChars":7,"textLines":1,"bbox":[566,518,72,58]}
+{"kind":"textbox","id":"sh/d0raxkz2","slide":1,"text":"recorded scenarios passed","textPreview":"recorded scenarios passed","textChars":25,"textLines":1,"bbox":[646,520,108,55]}
+{"kind":"textbox","id":"sh/czi9ofix","slide":1,"text":"50 / 1","textPreview":"50 / 1","textChars":6,"textLines":1,"bbox":[770,518,72,58]}
+{"kind":"textbox","id":"sh/4v610jup","slide":1,"text":"attempts and one success","textPreview":"attempts and one success","textChars":24,"textLines":1,"bbox":[850,520,108,55]}
+{"kind":"textbox","id":"sh/pwfitoba","slide":1,"text":"50 / 50","textPreview":"50 / 50","textChars":7,"textLines":1,"bbox":[974,518,72,58]}
+{"kind":"textbox","id":"sh/2tojy9cz","slide":1,"text":"distinct call-next claims","textPreview":"distinct call-next claims","textChars":25,"textLines":1,"bbox":[1054,520,108,55]}
+{"kind":"shape","id":"sh/3ux0ret4","slide":1,"bbox":[40,618,1190,35]}
+{"kind":"textbox","id":"sh/czq14ju1","slide":1,"text":"Demo boundary: AgriStack, Aadhaar, PFMS, state portals and communication gateways use simulations or fallback adapters","textPreview":"Demo boundary: AgriStack, Aadhaar, PFMS, state portals and communication gateways use simulations or fallback adapters","textChars":118,"textLines":1,"bbox":[61,625,1148,21]}
+{"kind":"textbox","id":"sh/d0z2xobm","slide":1,"text":"Sources","textPreview":"Sources","textChars":7,"textLines":1,"bbox":[41,666,56,17]}
+{"kind":"textbox","id":"sh/qxoj2tcv","slide":1,"text":"sih.gov.in   enam.gov.in   agristack.gov.in   pfms.nic.in   meity.gov.in   AnnSetu validation and load-test reports","textPreview":"sih.gov.in   enam.gov.in   agristack.gov.in   pfms.nic.in   meity.gov.in   AnnSetu validation and load-test reports","textChars":115,"textLines":1,"bbox":[104,664,1125,20]}
+{"kind":"image","id":"im/a9crydoz","slide":1,"name":"","alt":"Smart India Hackathon 2026 logo","bbox":[1020,5,232,82]}
+{"kind":"notes","id":"nt/mnvuhq","slide":1,"text":"Research sources:\n\nSmart India Hackathon problem statement 26032: https://sih.gov.in/sih2026PS\n\ne-NAM official overview and farmer features: https://www.enam.gov.in/ and https://www.enam.gov.in/web/stakeholders-Involved/farmers\n\nAgriStack Farmer Registry, UFSI, sandbox and consent architecture: https://agristack.gov.in/\n\nPFMS DBT FAQ and external-system integration: https://pfms.nic.in/SitePages/doc/PFMS_DBT_FAQ.pdf\n\nDigital Personal Data Protection Act 2023: https://www.meity.gov.in/writereaddata/files/Digital%20Personal%20Data%20Protection%20Act%202023.pdf\n\nCurrent prototype evidence: docs/pitch_deck/FEATURE_VALIDATION_CURRENT_CODEBASE.md and docs/migration/LOAD-TEST-REPORT.md\n\nThe ecosystem diagram avoids unsupported competitor exclusions. AnnSetu is positioned as a queue and coordination layer that complements existing trading, identity, payment and state procurement systems."}

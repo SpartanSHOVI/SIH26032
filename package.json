@@ -1,0 +1,43 @@
+{
+  "name": "annsetu",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AnnSetu - Smart Farmer Procurement & Queue Platform",
+  "scripts": {
+    "install:all": "pnpm install --frozen-lockfile",
+    "build:all": "pnpm -r run build",
+    "dev:realtime": "pnpm --filter realtime-service run dev",
+    "dev:portal": "pnpm --filter farmer-portal run dev",
+    "generate:types": "pnpm -r run generate:types",
+    "lint:all": "pnpm -r run lint",
+    "test:all": "pnpm -r run test",
+    "dev": "pnpm --parallel --filter @annsetu/api --filter @annsetu/web dev",
+    "dev:api": "pnpm --filter @annsetu/api dev",
+    "dev:web": "pnpm --filter @annsetu/web dev",
+    "build:migration": "pnpm --filter @annsetu/api build && pnpm --filter @annsetu/web build",
+    "typecheck": "pnpm --filter @annsetu/api typecheck && pnpm --filter @annsetu/web typecheck",
+    "test:migration": "pnpm --filter @annsetu/api test && pnpm --filter @annsetu/web test",
+    "test:unit": "pnpm --filter @annsetu/api test && pnpm --filter @annsetu/web test",
+    "test:load": "pnpm --filter @annsetu/api exec tsx test/concurrency.load.ts",
+    "db:generate": "pnpm --filter @annsetu/api db:generate",
+    "db:migrate": "pnpm --filter @annsetu/api db:migrate"
+  },
+  "devDependencies": {
+    "node": "24.20.0",
+    "typescript": "~5.9.3",
+    "tsx": "^4.20.0",
+    "@types/node": "^24.0.0"
+  },
+  "engines": {
+    "node": ">=24.20.0 <25"
+  },
+  "packageManager": "pnpm@9.15.9",
+  "pnpm": {
+    "overrides": {
+      "react": "19.2.8",
+      "react-dom": "19.2.8",
+      "@types/react": "^19.0.0",
+      "@types/react-dom": "^19.0.0"
+    }
+  }
+}

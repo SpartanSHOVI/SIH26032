@@ -1,0 +1,4870 @@
+{
+  "status": "success",
+  "message": "Commodity options fetched successfully",
+  "data": [
+    {
+      "id": 0,
+      "cmdt_name": "All",
+      "image_name": "",
+      "group_id": 0,
+      "group_name": "MSP Commodities + TOP Commodities",
+      "status": "Y"
+    },
+    {
+      "id": 9999,
+      "cmdt_name": "MSP Commodities",
+      "image_name": "",
+      "group_id": 0,
+      "group_name": "MSP Commodities + TOP Commodities",
+      "status": "Y"
+    },
+    {
+      "id": 99999,
+      "cmdt_name": "TOP Commodities",
+      "image_name": "",
+      "group_id": 0,
+      "group_name": "MSP Commodities + TOP Commodities",
+      "status": "Y"
+    },
+    {
+      "id": 380,
+      "cmdt_name": "Absinthe",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 571,
+      "cmdt_name": "Adulsa",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 454,
+      "cmdt_name": "Ajwain Husk",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 115,
+      "cmdt_name": "Ajwan",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 584,
+      "cmdt_name": "Akarkara",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 234,
+      "cmdt_name": "Alasande Gram",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 275,
+      "cmdt_name": "Almond(Badam)",
+      "image_name": null,
+      "group_id": 8,
+      "group_name": "Dry Fruits",
+      "status": 1
+    },
+    {
+      "id": 455,
+      "cmdt_name": "Aloe Vera",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 591,
+      "cmdt_name": "Aloe Vera Leaf",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 138,
+      "cmdt_name": "Alsandikai",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 573,
+      "cmdt_name": "Amaltas",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 72,
+      "cmdt_name": "Amaranthus",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 597,
+      "cmdt_name": "Amarbel",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 112,
+      "cmdt_name": "Ambada Seed",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 346,
+      "cmdt_name": "Ambady/Mesta/Patson",
+      "image_name": null,
+      "group_id": 4,
+      "group_name": "Fibre Crops",
+      "status": 1
+    },
+    {
+      "id": 456,
+      "cmdt_name": "Ambat Chuka",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 572,
+      "cmdt_name": "Ambrette Seed/Muskmallow",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 303,
+      "cmdt_name": "Amla(Nelli Kai)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 348,
+      "cmdt_name": "Amranthas Red",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 169,
+      "cmdt_name": "Antawala",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 326,
+      "cmdt_name": "Anthorium",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 17,
+      "cmdt_name": "Apple",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 276,
+      "cmdt_name": "Apricot(Jardalu/Khumani)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 118,
+      "cmdt_name": "Arecanut(Betelnut/Supari)",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 576,
+      "cmdt_name": "Aretha",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 457,
+      "cmdt_name": "Arrowroot",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 373,
+      "cmdt_name": "Asalia",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 434,
+      "cmdt_name": "Asgand",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 69,
+      "cmdt_name": "Ashgourd",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 435,
+      "cmdt_name": "Ashoka",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 372,
+      "cmdt_name": "Ashwagandha",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 363,
+      "cmdt_name": "Asparagus",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 190,
+      "cmdt_name": "Astera",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 436,
+      "cmdt_name": "Atis",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 223,
+      "cmdt_name": "Avare Dal",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 458,
+      "cmdt_name": "Avocado",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 327,
+      "cmdt_name": "BOP",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 590,
+      "cmdt_name": "Baboolphali",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 459,
+      "cmdt_name": "Baby Corn",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 347,
+      "cmdt_name": "Bael",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 420,
+      "cmdt_name": "Bajji chilli",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 28,
+      "cmdt_name": "Bajra(Pearl Millet/Cumbu)",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 228,
+      "cmdt_name": "Balekai",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 164,
+      "cmdt_name": "Bamboo",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 460,
+      "cmdt_name": "Bamboo Shoot",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 19,
+      "cmdt_name": "Banana",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 76,
+      "cmdt_name": "Banana - Green",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 414,
+      "cmdt_name": "Banana Leaf",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 412,
+      "cmdt_name": "Banana flower",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 413,
+      "cmdt_name": "Banana stem",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 29,
+      "cmdt_name": "Barley(Jau)",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 461,
+      "cmdt_name": "Barnyard Millet",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 569,
+      "cmdt_name": "Basmati Rice",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 271,
+      "cmdt_name": "Bay leaf(Tejpatta)",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 80,
+      "cmdt_name": "Beans",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 216,
+      "cmdt_name": "Beaten Rice",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 129,
+      "cmdt_name": "Beetroot",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 612,
+      "cmdt_name": "Begonia",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 437,
+      "cmdt_name": "Behada",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 577,
+      "cmdt_name": "Bejhar",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 217,
+      "cmdt_name": "Bengal Gram Dal(Chana Dal)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 6,
+      "cmdt_name": "Bengal Gram(Gram)(Whole)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 304,
+      "cmdt_name": "Ber(Zizyphus/Borehannu)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 121,
+      "cmdt_name": "Betal Leaves",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 37,
+      "cmdt_name": "Betelnuts",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 611,
+      "cmdt_name": "Betelvine",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 71,
+      "cmdt_name": "Bhindi(Ladies Finger)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 587,
+      "cmdt_name": "Bhringraj",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 377,
+      "cmdt_name": "Bhui Amlaya",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 599,
+      "cmdt_name": "Bichchu Phal",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 97,
+      "cmdt_name": "Big Gram",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 462,
+      "cmdt_name": "Bilimbi",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 47,
+      "cmdt_name": "Binoula",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 67,
+      "cmdt_name": "Bitter gourd",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 463,
+      "cmdt_name": "Black Currant",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 218,
+      "cmdt_name": "Black Gram Dal(Urd Dal)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 8,
+      "cmdt_name": "Black Gram(Urd Beans)(Whole)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 34,
+      "cmdt_name": "Black pepper",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 464,
+      "cmdt_name": "Blueberry",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 159,
+      "cmdt_name": "Borehannu",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 68,
+      "cmdt_name": "Bottle gourd",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 378,
+      "cmdt_name": "Brahmi",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 242,
+      "cmdt_name": "Bran",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 426,
+      "cmdt_name": "Bread Fruit",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 32,
+      "cmdt_name": "Brinjal",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 416,
+      "cmdt_name": "Brocoli",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 244,
+      "cmdt_name": "Broken Rice",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 270,
+      "cmdt_name": "Broomstick(Flower Broom)",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 465,
+      "cmdt_name": "Browntop Millet",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 173,
+      "cmdt_name": "Bull",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 237,
+      "cmdt_name": "Bullar",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 183,
+      "cmdt_name": "Bunch Beans",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 226,
+      "cmdt_name": "Butter",
+      "image_name": null,
+      "group_id": 15,
+      "group_name": "Oils and Fats",
+      "status": 1
+    },
+    {
+      "id": 126,
+      "cmdt_name": "Cabbage",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 409,
+      "cmdt_name": "Calendula",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 174,
+      "cmdt_name": "Calf",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 302,
+      "cmdt_name": "Camel Hair",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 165,
+      "cmdt_name": "Cane",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 136,
+      "cmdt_name": "Capsicum",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 36,
+      "cmdt_name": "Cardamom",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 466,
+      "cmdt_name": "Carissa(Karvand)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 322,
+      "cmdt_name": "Carnation",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 125,
+      "cmdt_name": "Carrot",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 196,
+      "cmdt_name": "Cashew Kernnel",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 33,
+      "cmdt_name": "Cashewnuts",
+      "image_name": null,
+      "group_id": 8,
+      "group_name": "Dry Fruits",
+      "status": 1
+    },
+    {
+      "id": 224,
+      "cmdt_name": "Castor Oil",
+      "image_name": null,
+      "group_id": 15,
+      "group_name": "Oils and Fats",
+      "status": 1
+    },
+    {
+      "id": 106,
+      "cmdt_name": "Castor Seed",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 552,
+      "cmdt_name": "Catechu(Black Cutch/ Khair/Katha)",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 31,
+      "cmdt_name": "Cauliflower",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 467,
+      "cmdt_name": "Chakhao(Black Rice)",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 158,
+      "cmdt_name": "Chakotha",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 367,
+      "cmdt_name": "Chandrashoor",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 141,
+      "cmdt_name": "Chapparad Avare",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 603,
+      "cmdt_name": "Chena",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 246,
+      "cmdt_name": "Chennangi Dal",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 198,
+      "cmdt_name": "Chennangi(Whole)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 278,
+      "cmdt_name": "Cherry",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 614,
+      "cmdt_name": "Chest Nut",
+      "image_name": null,
+      "group_id": 8,
+      "group_name": "Dry Fruits",
+      "status": 1
+    },
+    {
+      "id": 468,
+      "cmdt_name": "Chhappan Kaddu",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 583,
+      "cmdt_name": "Chiaseeds",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 553,
+      "cmdt_name": "Chicory(Chikori/Kasni)",
+      "image_name": null,
+      "group_id": 9,
+      "group_name": "Beverages",
+      "status": 1
+    },
+    {
+      "id": 58,
+      "cmdt_name": "Chikoos(Sapota)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 26,
+      "cmdt_name": "Chili Red",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 74,
+      "cmdt_name": "Chilly Capsicum",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 438,
+      "cmdt_name": "Chironji",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 139,
+      "cmdt_name": "Chow Chow",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 331,
+      "cmdt_name": "Chrysanthemum",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 189,
+      "cmdt_name": "Chrysanthemum(Loose)",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 267,
+      "cmdt_name": "Cinamon(Dalchini)",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 407,
+      "cmdt_name": "Clarkia",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 89,
+      "cmdt_name": "Cloves",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 66,
+      "cmdt_name": "Cluster beans",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 266,
+      "cmdt_name": "Coca",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 315,
+      "cmdt_name": "Cock",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 581,
+      "cmdt_name": "Coco Broom",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 88,
+      "cmdt_name": "Cocoa",
+      "image_name": null,
+      "group_id": 9,
+      "group_name": "Beverages",
+      "status": 1
+    },
+    {
+      "id": 116,
+      "cmdt_name": "Coconut",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 469,
+      "cmdt_name": "Coconut Coir",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 220,
+      "cmdt_name": "Coconut Oil",
+      "image_name": null,
+      "group_id": 15,
+      "group_name": "Oils and Fats",
+      "status": 1
+    },
+    {
+      "id": 96,
+      "cmdt_name": "Coconut Seed",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 41,
+      "cmdt_name": "Coffee",
+      "image_name": null,
+      "group_id": 9,
+      "group_name": "Beverages",
+      "status": 1
+    },
+    {
+      "id": 269,
+      "cmdt_name": "Colacasia",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 470,
+      "cmdt_name": "Coleus",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 111,
+      "cmdt_name": "Copra",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 39,
+      "cmdt_name": "Coriander(Leaves)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 92,
+      "cmdt_name": "Corriander seed",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 401,
+      "cmdt_name": "Cossandra",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 15,
+      "cmdt_name": "Cotton",
+      "image_name": null,
+      "group_id": 4,
+      "group_name": "Fibre Crops",
+      "status": 1
+    },
+    {
+      "id": 84,
+      "cmdt_name": "Cotton Seed",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 171,
+      "cmdt_name": "Cow",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 78,
+      "cmdt_name": "Cowpea(Lobia/Karamani)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 75,
+      "cmdt_name": "Cowpea(Veg)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 471,
+      "cmdt_name": "Crab",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 131,
+      "cmdt_name": "Cucumbar(Kheera)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 38,
+      "cmdt_name": "Cummin Seed(Jeera)",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 415,
+      "cmdt_name": "Curry Leaf",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 300,
+      "cmdt_name": "Custard Apple(Sharifa)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 329,
+      "cmdt_name": "Daila(Chandni)",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 578,
+      "cmdt_name": "Dal Mix",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 227,
+      "cmdt_name": "Dalda",
+      "image_name": null,
+      "group_id": 15,
+      "group_name": "Oils and Fats",
+      "status": 1
+    },
+    {
+      "id": 472,
+      "cmdt_name": "Dates",
+      "image_name": null,
+      "group_id": 8,
+      "group_name": "Dry Fruits",
+      "status": 1
+    },
+    {
+      "id": 339,
+      "cmdt_name": "Delha",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 57,
+      "cmdt_name": "Dhaincha",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 554,
+      "cmdt_name": "Dhaincha(Seed)",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 421,
+      "cmdt_name": "Double Beans",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 424,
+      "cmdt_name": "Dragon fruit",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 140,
+      "cmdt_name": "Drumstick",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 113,
+      "cmdt_name": "Dry Chillies",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 473,
+      "cmdt_name": "Dry Fish",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 293,
+      "cmdt_name": "Dry Fodder",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 231,
+      "cmdt_name": "Dry Grapes",
+      "image_name": null,
+      "group_id": 8,
+      "group_name": "Dry Fruits",
+      "status": 1
+    },
+    {
+      "id": 317,
+      "cmdt_name": "Duck",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 135,
+      "cmdt_name": "Duster Beans",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 314,
+      "cmdt_name": "Egg",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 308,
+      "cmdt_name": "Egypian Clover(Barseem)",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 247,
+      "cmdt_name": "Elephant Yam(Suran)/Amorphophallus",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 563,
+      "cmdt_name": "Engineered Wood/Processed Wood",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 474,
+      "cmdt_name": "Field Bean(Anumulu)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 475,
+      "cmdt_name": "Field Gram",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 53,
+      "cmdt_name": "Field Pea",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 476,
+      "cmdt_name": "Fig (Dry)",
+      "image_name": null,
+      "group_id": 8,
+      "group_name": "Dry Fruits",
+      "status": 1
+    },
+    {
+      "id": 180,
+      "cmdt_name": "Fig(Anjura/Anjeer)",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 166,
+      "cmdt_name": "Firewood",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 313,
+      "cmdt_name": "Fish",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 439,
+      "cmdt_name": "Flax seeds",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 312,
+      "cmdt_name": "Flower Broom",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 566,
+      "cmdt_name": "Flowers-Others",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 104,
+      "cmdt_name": "Foxtail Millet(Navane)",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 249,
+      "cmdt_name": "French Beans(Frasbean)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 298,
+      "cmdt_name": "Galgal(Lemon)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 400,
+      "cmdt_name": "Gamphrena",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 589,
+      "cmdt_name": "Gangri",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 477,
+      "cmdt_name": "Garcinia",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 25,
+      "cmdt_name": "Garlic",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 595,
+      "cmdt_name": "Gataran",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 478,
+      "cmdt_name": "Gerbera",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 206,
+      "cmdt_name": "Ghee",
+      "image_name": null,
+      "group_id": 15,
+      "group_name": "Oils and Fats",
+      "status": 1
+    },
+    {
+      "id": 479,
+      "cmdt_name": "Gherkin",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 568,
+      "cmdt_name": "Gholbhaji",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 480,
+      "cmdt_name": "Ghost Pepper(King Chilli)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 381,
+      "cmdt_name": "Giloy",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 229,
+      "cmdt_name": "Gingelly Oil",
+      "image_name": null,
+      "group_id": 15,
+      "group_name": "Oils and Fats",
+      "status": 1
+    },
+    {
+      "id": 481,
+      "cmdt_name": "Ginger Seed",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 27,
+      "cmdt_name": "Ginger(Dry)",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 87,
+      "cmdt_name": "Ginger(Green)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 311,
+      "cmdt_name": "Gladiolus Bulb",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 310,
+      "cmdt_name": "Gladiolus Cut Flower",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 391,
+      "cmdt_name": "Glardia",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 178,
+      "cmdt_name": "Goat",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 301,
+      "cmdt_name": "Goat Hair",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 592,
+      "cmdt_name": "Gokhru",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 440,
+      "cmdt_name": "Gond",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 423,
+      "cmdt_name": "Goose berry(Nellikkai)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 482,
+      "cmdt_name": "Goosefoot",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 306,
+      "cmdt_name": "Gram Raw(Chholia)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 245,
+      "cmdt_name": "Gramflour",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 22,
+      "cmdt_name": "Grapes",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 137,
+      "cmdt_name": "Green Avare(W)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 73,
+      "cmdt_name": "Green Chilli",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 294,
+      "cmdt_name": "Green Fodder",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 219,
+      "cmdt_name": "Green Gram Dal(Moong Dal)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 9,
+      "cmdt_name": "Green Gram(Moong)(Whole)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 46,
+      "cmdt_name": "Green Peas",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 483,
+      "cmdt_name": "Green Tea",
+      "image_name": null,
+      "group_id": 9,
+      "group_name": "Beverages",
+      "status": 1
+    },
+    {
+      "id": 484,
+      "cmdt_name": "Grey Fruit",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 221,
+      "cmdt_name": "Ground Nut Oil",
+      "image_name": null,
+      "group_id": 15,
+      "group_name": "Oils and Fats",
+      "status": 1
+    },
+    {
+      "id": 222,
+      "cmdt_name": "Ground Nut Seed",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 10,
+      "cmdt_name": "Groundnut",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 263,
+      "cmdt_name": "Groundnut pods(raw)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 265,
+      "cmdt_name": "Groundnut(Split)",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 62,
+      "cmdt_name": "Guar",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 342,
+      "cmdt_name": "Guar Seed(Cluster Beans Seed)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 156,
+      "cmdt_name": "Guava",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 382,
+      "cmdt_name": "Gudmar",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 383,
+      "cmdt_name": "Guggal",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 61,
+      "cmdt_name": "Gur(Jaggery)",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 232,
+      "cmdt_name": "Gurellu",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 208,
+      "cmdt_name": "Haralekai",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 441,
+      "cmdt_name": "Harrah",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 604,
+      "cmdt_name": "Harsingar Leaf",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 175,
+      "cmdt_name": "He Buffalo",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 570,
+      "cmdt_name": "Heena",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 403,
+      "cmdt_name": "Heliconia species",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 316,
+      "cmdt_name": "Hen",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 485,
+      "cmdt_name": "Hilsa",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 585,
+      "cmdt_name": "Hingot",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 108,
+      "cmdt_name": "Hippe Seed",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 486,
+      "cmdt_name": "Hog Plum",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 194,
+      "cmdt_name": "Honey",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 107,
+      "cmdt_name": "Honge seed",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 102,
+      "cmdt_name": "Hybrid Cumbu",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 555,
+      "cmdt_name": "Imarti Wood(Good Quality)",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 250,
+      "cmdt_name": "Indian Beans(Seam)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 292,
+      "cmdt_name": "Indian Colza(Sarson)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 487,
+      "cmdt_name": "Indian Sherbet Berry(Phalsa)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 602,
+      "cmdt_name": "Indrayan Fruit",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 394,
+      "cmdt_name": "Irish",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 212,
+      "cmdt_name": "Isabgul(Psyllium)",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 488,
+      "cmdt_name": "Isbgol",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 153,
+      "cmdt_name": "Jack Fruit(Ripe)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 489,
+      "cmdt_name": "Jackfruit Seed",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 556,
+      "cmdt_name": "Jackfruit(Green/Raw/Unripe)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 442,
+      "cmdt_name": "Jaee",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 335,
+      "cmdt_name": "Jaffri",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 147,
+      "cmdt_name": "Jamamkhan",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 606,
+      "cmdt_name": "Jamun",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 155,
+      "cmdt_name": "Jamun(Narale Hannu)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 323,
+      "cmdt_name": "Jarbara",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 187,
+      "cmdt_name": "Jasmine",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 207,
+      "cmdt_name": "Javi",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 5,
+      "cmdt_name": "Jowar(Sorghum)",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 16,
+      "cmdt_name": "Jute",
+      "image_name": null,
+      "group_id": 4,
+      "group_name": "Fibre Crops",
+      "status": 1
+    },
+    {
+      "id": 170,
+      "cmdt_name": "Jute Seed",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 309,
+      "cmdt_name": "Kabuli Chana(Chickpeas-White)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 268,
+      "cmdt_name": "Kacholam",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 490,
+      "cmdt_name": "Kagda",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 188,
+      "cmdt_name": "Kakada",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 385,
+      "cmdt_name": "Kalihari",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 386,
+      "cmdt_name": "Kalmegh",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 191,
+      "cmdt_name": "Kankambra",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 586,
+      "cmdt_name": "Kantakari",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 99,
+      "cmdt_name": "Karamani",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 157,
+      "cmdt_name": "Karbuja(Musk Melon)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 575,
+      "cmdt_name": "Kaunch",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 410,
+      "cmdt_name": "Kevda",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 567,
+      "cmdt_name": "Khandsari(Desi Khand)",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 50,
+      "cmdt_name": "Kharif Mash",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 443,
+      "cmdt_name": "Khirni",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 319,
+      "cmdt_name": "Khoya",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 491,
+      "cmdt_name": "Kidney Beans(Rajma)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 284,
+      "cmdt_name": "Kinnow",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 492,
+      "cmdt_name": "Kiwi Fruit",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 149,
+      "cmdt_name": "Knool Khol",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 101,
+      "cmdt_name": "Kodo Millet(Varagu)",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 388,
+      "cmdt_name": "Kooth",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 200,
+      "cmdt_name": "Kuchur",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 493,
+      "cmdt_name": "Kuchur - Kusum Seed",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 98,
+      "cmdt_name": "Kulthi(Horse Gram)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 344,
+      "cmdt_name": "Kutki",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 127,
+      "cmdt_name": "Ladies Finger",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 444,
+      "cmdt_name": "Laha",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 81,
+      "cmdt_name": "Lak(Teora)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 494,
+      "cmdt_name": "Large Cardamom",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 600,
+      "cmdt_name": "Lata Kasturi",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 143,
+      "cmdt_name": "Leafy Vegetable",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 495,
+      "cmdt_name": "Leek",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 261,
+      "cmdt_name": "Lemon",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 496,
+      "cmdt_name": "Lemongrass",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 52,
+      "cmdt_name": "Lentil(Masur)(Whole)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 497,
+      "cmdt_name": "Lesser Yam",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 607,
+      "cmdt_name": "Letuce",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 325,
+      "cmdt_name": "Lilly",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 151,
+      "cmdt_name": "Lime",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 399,
+      "cmdt_name": "Limonia(status)",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 56,
+      "cmdt_name": "Linseed",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 233,
+      "cmdt_name": "Lint",
+      "image_name": null,
+      "group_id": 4,
+      "group_name": "Fibre Crops",
+      "status": 1
+    },
+    {
+      "id": 299,
+      "cmdt_name": "Litchi",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 498,
+      "cmdt_name": "Little Millet ",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 253,
+      "cmdt_name": "Little gourd(Kundru)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 255,
+      "cmdt_name": "Long Melon(Kakri)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 332,
+      "cmdt_name": "Lotus",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 287,
+      "cmdt_name": "Lotus Sticks",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 285,
+      "cmdt_name": "Lukad",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 408,
+      "cmdt_name": "Lupine",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 550,
+      "cmdt_name": "MENETC*3",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 433,
+      "cmdt_name": "Ma.Inji",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 91,
+      "cmdt_name": "Mace",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 340,
+      "cmdt_name": "Mahedi",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 283,
+      "cmdt_name": "Mahua",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 318,
+      "cmdt_name": "Mahua Seed(Hippe seed)",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 241,
+      "cmdt_name": "Maida Atta",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 4,
+      "cmdt_name": "Maize",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 557,
+      "cmdt_name": "Makhana(Foxnut)",
+      "image_name": null,
+      "group_id": 8,
+      "group_name": "Dry Fruits",
+      "status": 1
+    },
+    {
+      "id": 20,
+      "cmdt_name": "Mango",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 144,
+      "cmdt_name": "Mango(Raw-Ripe)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 499,
+      "cmdt_name": "Mangosteen",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 184,
+      "cmdt_name": "Maragensu",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 152,
+      "cmdt_name": "Marasebu",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 336,
+      "cmdt_name": "Marget",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 193,
+      "cmdt_name": "Marigold(Calcutta)",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 334,
+      "cmdt_name": "Marigold(loose)",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 431,
+      "cmdt_name": "Marikozhunthu",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 49,
+      "cmdt_name": "Mash",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 288,
+      "cmdt_name": "Mashrooms",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 213,
+      "cmdt_name": "Masur Dal",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 79,
+      "cmdt_name": "Mataki",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 500,
+      "cmdt_name": "Meal Maker (Soya Chunks)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 501,
+      "cmdt_name": "Mentha Oil",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 558,
+      "cmdt_name": "Mentha(Mint)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 43,
+      "cmdt_name": "Methi Seeds",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 42,
+      "cmdt_name": "Methi(Leaves)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 195,
+      "cmdt_name": "Millets",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 307,
+      "cmdt_name": "Mint(Pudina)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 452,
+      "cmdt_name": "Moath Dal",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 64,
+      "cmdt_name": "Mousambi(Sweet Lime)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 375,
+      "cmdt_name": "Muesli",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 502,
+      "cmdt_name": "Mulberry",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 357,
+      "cmdt_name": "Muleti",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 445,
+      "cmdt_name": "Muskmelon Seeds",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 12,
+      "cmdt_name": "Mustard",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 274,
+      "cmdt_name": "Mustard Oil",
+      "image_name": null,
+      "group_id": 15,
+      "group_name": "Oils and Fats",
+      "status": 1
+    },
+    {
+      "id": 120,
+      "cmdt_name": "Myrobolan(Harad)",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 593,
+      "cmdt_name": "Nagarmotha",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 202,
+      "cmdt_name": "Nargasi",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 181,
+      "cmdt_name": "Nearle Hannu",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 503,
+      "cmdt_name": "Neem Fruits",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 109,
+      "cmdt_name": "Neem Seed",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 182,
+      "cmdt_name": "Nelli Kai",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 429,
+      "cmdt_name": "Nerium",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 83,
+      "cmdt_name": "Niger Seed(Ramtil)",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 601,
+      "cmdt_name": "Nilgiri",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 594,
+      "cmdt_name": "Nirguni",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 90,
+      "cmdt_name": "Nutmeg",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 23,
+      "cmdt_name": "Onion",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 305,
+      "cmdt_name": "Onion Green",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 18,
+      "cmdt_name": "Orange",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 328,
+      "cmdt_name": "Orchid",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 82,
+      "cmdt_name": "Other Pulses",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 349,
+      "cmdt_name": "Other green and fresh vegetables",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 172,
+      "cmdt_name": "Ox",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 343,
+      "cmdt_name": "Paddy(Basmati)",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 2,
+      "cmdt_name": "Paddy(Common)",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 370,
+      "cmdt_name": "Palash flowers",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 59,
+      "cmdt_name": "Papaya",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 264,
+      "cmdt_name": "Papaya(Raw)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 504,
+      "cmdt_name": "Passion Fruit",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 333,
+      "cmdt_name": "Patti Calcutta",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 259,
+      "cmdt_name": "Pea Pod/Pea Cod/हरी मटर",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 281,
+      "cmdt_name": "Peach",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 280,
+      "cmdt_name": "Pear(Marasebu)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 146,
+      "cmdt_name": "Peas Wet",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 295,
+      "cmdt_name": "Peas(Dry)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 252,
+      "cmdt_name": "Pegeon Pea(Arhar Fali)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 93,
+      "cmdt_name": "Pepper garbled",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 94,
+      "cmdt_name": "Pepper ungarbled",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 418,
+      "cmdt_name": "Perandai",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 277,
+      "cmdt_name": "Persimon(Japani Fal)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 505,
+      "cmdt_name": "Phuee(Leafy Veg)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 179,
+      "cmdt_name": "Pigs",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 506,
+      "cmdt_name": "Pincushion Flower",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 507,
+      "cmdt_name": "Pine Nut(Chilgoza /Niyoza)",
+      "image_name": null,
+      "group_id": 8,
+      "group_name": "Dry Fruits",
+      "status": 1
+    },
+    {
+      "id": 21,
+      "cmdt_name": "Pineapple",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 508,
+      "cmdt_name": "Pista(Pistachio)",
+      "image_name": null,
+      "group_id": 8,
+      "group_name": "Dry Fruits",
+      "status": 1
+    },
+    {
+      "id": 279,
+      "cmdt_name": "Plum",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 254,
+      "cmdt_name": "Pointed gourd(Parval)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 509,
+      "cmdt_name": "Pokcha Leafy Veg",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 197,
+      "cmdt_name": "Polherb",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 160,
+      "cmdt_name": "Pomegranate",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 615,
+      "cmdt_name": "Pomelo",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 354,
+      "cmdt_name": "Poppy capsules",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 559,
+      "cmdt_name": "Popular Wood",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 24,
+      "cmdt_name": "Potato",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 510,
+      "cmdt_name": "Prawn",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 580,
+      "cmdt_name": "Processed Products(Non-Notified)",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 511,
+      "cmdt_name": "Proso Millet",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 70,
+      "cmdt_name": "Pumpkin",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 210,
+      "cmdt_name": "Pundi",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 110,
+      "cmdt_name": "Pundi Seed",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 376,
+      "cmdt_name": "Pupadia",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 512,
+      "cmdt_name": "Purslane",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 513,
+      "cmdt_name": "Quince(Nakh)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 582,
+      "cmdt_name": "Quinoa",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 551,
+      "cmdt_name": "Rab/Liquid Jaggery/Molasses",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 133,
+      "cmdt_name": "Raddish",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 30,
+      "cmdt_name": "Ragi(Finger Millet)",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 338,
+      "cmdt_name": "Raibel",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 205,
+      "cmdt_name": "Rajgir",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 446,
+      "cmdt_name": "Rala",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 235,
+      "cmdt_name": "Ram",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 560,
+      "cmdt_name": "Rambans(Agave /Century plant)",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 514,
+      "cmdt_name": "Rambutan",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 447,
+      "cmdt_name": "Ramphal",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 258,
+      "cmdt_name": "Rat Tail Radish(Mogari)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 389,
+      "cmdt_name": "Ratanjot",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 515,
+      "cmdt_name": "Raw Biomass(Agro Residue)",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 54,
+      "cmdt_name": "Raya",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 448,
+      "cmdt_name": "Rayee",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 422,
+      "cmdt_name": "Red Cabbage",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 516,
+      "cmdt_name": "Red Gourd",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 214,
+      "cmdt_name": "Red gram split/Arhar dal/Tur dal",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 45,
+      "cmdt_name": "Red gram/Arhar/Tur(whole)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 272,
+      "cmdt_name": "Resinwood",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 517,
+      "cmdt_name": "Ribbed Celery",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 51,
+      "cmdt_name": "Riccbcan",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 3,
+      "cmdt_name": "Rice",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 518,
+      "cmdt_name": "Rice Bean",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 519,
+      "cmdt_name": "Ridge Gourd(Permal/Hybrid Gourd)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 132,
+      "cmdt_name": "Ridgeguard(Tori)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 321,
+      "cmdt_name": "Rose(Local)",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 186,
+      "cmdt_name": "Rose(Loose))",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 320,
+      "cmdt_name": "Rose(Tata)",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 520,
+      "cmdt_name": "Round Chilli",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 257,
+      "cmdt_name": "Round gourd",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 95,
+      "cmdt_name": "Rubber",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 243,
+      "cmdt_name": "Sabu Dan",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 48,
+      "cmdt_name": "Safflower",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 286,
+      "cmdt_name": "Saffron",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 598,
+      "cmdt_name": "Sahjan Leaf",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 225,
+      "cmdt_name": "Sajje",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 521,
+      "cmdt_name": "Sal Seeds",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 579,
+      "cmdt_name": "Salad",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 522,
+      "cmdt_name": "Salix-Pursi(Willow)",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 105,
+      "cmdt_name": "Same/Savi",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 619,
+      "cmdt_name": "Sanai Seed",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 117,
+      "cmdt_name": "Sanai/Sunhemp",
+      "image_name": null,
+      "group_id": 4,
+      "group_name": "Fibre Crops",
+      "status": 1
+    },
+    {
+      "id": 379,
+      "cmdt_name": "Sandalwood",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 204,
+      "cmdt_name": "Sarasum",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 596,
+      "cmdt_name": "Sarphoka",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 230,
+      "cmdt_name": "Season Leaves",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 209,
+      "cmdt_name": "Seegu",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 148,
+      "cmdt_name": "Seemebadnekai",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 162,
+      "cmdt_name": "Seetapal",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 561,
+      "cmdt_name": "Sehuwan (Seed)",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 523,
+      "cmdt_name": "Sem",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 11,
+      "cmdt_name": "Sesamum(Sesame,Gingelly,Til)",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 574,
+      "cmdt_name": "Shankhpushpi",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 176,
+      "cmdt_name": "She Buffalo",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 236,
+      "cmdt_name": "She Goat",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 177,
+      "cmdt_name": "Sheep",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 524,
+      "cmdt_name": "Shrimp",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 154,
+      "cmdt_name": "Siddota",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 525,
+      "cmdt_name": "Silk Cocoon",
+      "image_name": null,
+      "group_id": 13,
+      "group_name": "Live Stock,Poultry,Fisheries",
+      "status": 1
+    },
+    {
+      "id": 419,
+      "cmdt_name": "Siru Kizhagu",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 185,
+      "cmdt_name": "Skin And Hide",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 128,
+      "cmdt_name": "Snakeguard",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 526,
+      "cmdt_name": "Snow Mountain Garlic",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 114,
+      "cmdt_name": "Soanf",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 167,
+      "cmdt_name": "Soapnut(Antawala/Retha)",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 449,
+      "cmdt_name": "Soha",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 609,
+      "cmdt_name": "Sohphi",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 608,
+      "cmdt_name": "Sohsang",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 239,
+      "cmdt_name": "Soji",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 203,
+      "cmdt_name": "Sompu",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 527,
+      "cmdt_name": "Soursop",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 13,
+      "cmdt_name": "Soyabean",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 290,
+      "cmdt_name": "Spinach",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 256,
+      "cmdt_name": "Spiny Gourd / Kartali(Kantola)\n",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 262,
+      "cmdt_name": "Sponge gourd",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 282,
+      "cmdt_name": "Squash(Chappal Kadoo)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 528,
+      "cmdt_name": "Star Fruit(Kamraikh)",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 529,
+      "cmdt_name": "Strawberry",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 44,
+      "cmdt_name": "Sugar",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 530,
+      "cmdt_name": "Sugar Snap Peas",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 122,
+      "cmdt_name": "Sugarcane",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 417,
+      "cmdt_name": "Sundaikai",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 14,
+      "cmdt_name": "Sunflower/Sunflower Seed",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 199,
+      "cmdt_name": "Suram",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 251,
+      "cmdt_name": "Surat Beans(Papadi)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 211,
+      "cmdt_name": "Suva(Dill Seed)",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 150,
+      "cmdt_name": "Suvarna Gadde",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 531,
+      "cmdt_name": "Swan Phali(Flat Bean)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 532,
+      "cmdt_name": "Swan Plant (Green Herb)",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 533,
+      "cmdt_name": "Swanflower",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 534,
+      "cmdt_name": "Sweet Corn ",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 124,
+      "cmdt_name": "Sweet Potato",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 145,
+      "cmdt_name": "Sweet Pumpkin",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 535,
+      "cmdt_name": "Sweet Saag",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 395,
+      "cmdt_name": "Sweet Sultan",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 103,
+      "cmdt_name": "T.V. Cumbu",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 613,
+      "cmdt_name": "Tamarind",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 215,
+      "cmdt_name": "Tamarind Fruit",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 168,
+      "cmdt_name": "Tamarind Seed",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 85,
+      "cmdt_name": "Tapioca",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 63,
+      "cmdt_name": "Taramira",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 537,
+      "cmdt_name": "Taro (Arvi) Leaves",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 538,
+      "cmdt_name": "Taro (Arvi) Stem",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 40,
+      "cmdt_name": "Tea",
+      "image_name": null,
+      "group_id": 9,
+      "group_name": "Beverages",
+      "status": 1
+    },
+    {
+      "id": 161,
+      "cmdt_name": "Tender Coconut",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 562,
+      "cmdt_name": "Tendu Leaves/Kendu leaves/Bidi Leaves",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 588,
+      "cmdt_name": "Tesu Flower",
+      "image_name": null,
+      "group_id": 16,
+      "group_name": "Medicinal and Aromatic Plants",
+      "status": 1
+    },
+    {
+      "id": 539,
+      "cmdt_name": "Tevada",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 100,
+      "cmdt_name": "Thinai(Italian Millet)",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 142,
+      "cmdt_name": "Thogrikai",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 134,
+      "cmdt_name": "Thondekai",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 297,
+      "cmdt_name": "Tinda",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 119,
+      "cmdt_name": "Tobacco",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 65,
+      "cmdt_name": "Tomato",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 273,
+      "cmdt_name": "Torchwood",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 55,
+      "cmdt_name": "Toria",
+      "image_name": null,
+      "group_id": 3,
+      "group_name": "Oil Seeds",
+      "status": 1
+    },
+    {
+      "id": 192,
+      "cmdt_name": "Tube Flower",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 330,
+      "cmdt_name": "Tube Rose(Double)",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 337,
+      "cmdt_name": "Tube Rose(Loose)",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 324,
+      "cmdt_name": "Tube Rose(Single)",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 432,
+      "cmdt_name": "Tulasi",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 392,
+      "cmdt_name": "Tulip",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 35,
+      "cmdt_name": "Turmeric",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 610,
+      "cmdt_name": "Turmeric Powder",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 260,
+      "cmdt_name": "Turmeric(raw)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 289,
+      "cmdt_name": "Turnip",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 366,
+      "cmdt_name": "Vatsanabha",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 291,
+      "cmdt_name": "Walnut",
+      "image_name": null,
+      "group_id": 8,
+      "group_name": "Dry Fruits",
+      "status": 1
+    },
+    {
+      "id": 425,
+      "cmdt_name": "Water Apple",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 60,
+      "cmdt_name": "Water Melon",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 540,
+      "cmdt_name": "Water Plant(Kaseru)",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 450,
+      "cmdt_name": "Water chestnut",
+      "image_name": null,
+      "group_id": 8,
+      "group_name": "Dry Fruits",
+      "status": 1
+    },
+    {
+      "id": 451,
+      "cmdt_name": "Wax",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 1,
+      "cmdt_name": "Wheat",
+      "image_name": null,
+      "group_id": 1,
+      "group_name": "Cereals",
+      "status": 1
+    },
+    {
+      "id": 240,
+      "cmdt_name": "Wheat Atta",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 358,
+      "cmdt_name": "White Muesli",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 341,
+      "cmdt_name": "White Peas",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 130,
+      "cmdt_name": "White Pumpkin",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 541,
+      "cmdt_name": "Wild Bean / Pod",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 542,
+      "cmdt_name": "Wild Cucumber",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 543,
+      "cmdt_name": "Wild Garlic / Shoots",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 544,
+      "cmdt_name": "Wild Melon",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 545,
+      "cmdt_name": "Wild Spinach",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 427,
+      "cmdt_name": "Wild lemon",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 163,
+      "cmdt_name": "Wood",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 428,
+      "cmdt_name": "Wood Apple",
+      "image_name": null,
+      "group_id": 5,
+      "group_name": "Fruits",
+      "status": 1
+    },
+    {
+      "id": 565,
+      "cmdt_name": "Wood Veneer",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 564,
+      "cmdt_name": "Wooden Stick / Wooden Pole",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 296,
+      "cmdt_name": "Wool",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 201,
+      "cmdt_name": "Yam",
+      "image_name": null,
+      "group_id": 10,
+      "group_name": "Others",
+      "status": 1
+    },
+    {
+      "id": 546,
+      "cmdt_name": "Yam Bean / Mexican Turnip(Bankla)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 248,
+      "cmdt_name": "Yam(Ratalu)",
+      "image_name": null,
+      "group_id": 6,
+      "group_name": "Vegetables",
+      "status": 1
+    },
+    {
+      "id": 411,
+      "cmdt_name": "balsam",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 364,
+      "cmdt_name": "basil",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 345,
+      "cmdt_name": "buttery",
+      "image_name": null,
+      "group_id": 2,
+      "group_name": "Pulses",
+      "status": 1
+    },
+    {
+      "id": 396,
+      "cmdt_name": "cineraria",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 371,
+      "cmdt_name": "dhawai flowers",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 405,
+      "cmdt_name": "dianthus",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 352,
+      "cmdt_name": "dried mango",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 404,
+      "cmdt_name": "golden rod",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 390,
+      "cmdt_name": "gulli",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 398,
+      "cmdt_name": "gypsophila",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 402,
+      "cmdt_name": "hydrangea",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 430,
+      "cmdt_name": "kakatan",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 368,
+      "cmdt_name": "karanja seeds",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 387,
+      "cmdt_name": "kokum",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 355,
+      "cmdt_name": "kutki",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 361,
+      "cmdt_name": "liquor turmeric",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 356,
+      "cmdt_name": "macoy",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 351,
+      "cmdt_name": "mango powder",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 353,
+      "cmdt_name": "nigella",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 374,
+      "cmdt_name": "nigella seeds",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 360,
+      "cmdt_name": "pippali",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 350,
+      "cmdt_name": "poppy seeds",
+      "image_name": null,
+      "group_id": 7,
+      "group_name": "Spices",
+      "status": 1
+    },
+    {
+      "id": 397,
+      "cmdt_name": "salvia",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 362,
+      "cmdt_name": "sanay",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 393,
+      "cmdt_name": "sevanti",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 384,
+      "cmdt_name": "spikenard",
+      "image_name": null,
+      "group_id": 12,
+      "group_name": "Forest Products",
+      "status": 1
+    },
+    {
+      "id": 369,
+      "cmdt_name": "stevia",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 359,
+      "cmdt_name": "stone pulverizer",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    },
+    {
+      "id": 406,
+      "cmdt_name": "sweet william",
+      "image_name": null,
+      "group_id": 14,
+      "group_name": "Flowers",
+      "status": 1
+    },
+    {
+      "id": 365,
+      "cmdt_name": "vadang",
+      "image_name": null,
+      "group_id": 11,
+      "group_name": "Drug and Narcotics",
+      "status": 1
+    }
+  ]
+}

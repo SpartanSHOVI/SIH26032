@@ -1,0 +1,8 @@
+state,state_id,district,district_id,market_id,mandi_name,market_name_official,address,pincode,phone,email,website,market_type,regulated,established_year,area_hectares,storage_capacity_mt,cold_storage,num_shops,num_traders,num_commission_agents,num_weighing_machines,commodities_traded,working_hours,bank_present,atm_present,internet_present,toilet_facilities,electricity,road_connectivity,nearest_railway,nearest_airport,latitude,longitude,raw_json,scraped_at,status,error,captcha_attempts
+Andhra Pradesh,2,Dr.B.R.A.Konaseema,720,835,Ambajipeta APMC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-09-09T01:12:50.804852,failed,No data after retries,0
+Haryana,12,Jhajar,171,456,Jhajjar APMC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-09-09T01:13:55.925445,failed,No data after retries,0
+Punjab,28,Faridkot,455,3429,Faridkot (Machakikalan) APMC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-09-09T01:14:12.834935,failed,No data after retries,0
+Gujarat,11,Mehsana,150,2606,Vadnagar(Kheralu) APMC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-09-09T01:14:30.117137,failed,No data after retries,0
+Haryana,12,Jind,172,79,Narwana APMC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-09-09T01:14:50.866197,failed,No data after retries,0
+Haryana,12,Jind,172,1837,Pillukhera APMC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-09-09T01:15:29.603969,failed,No data after retries,0
+Gujarat,11,Mehsana,150,2557,Vijapur(Kukarvada) APMC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-09-09T01:15:45.609415,failed,No data after retries,0

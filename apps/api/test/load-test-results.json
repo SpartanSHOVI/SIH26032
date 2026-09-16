@@ -1,0 +1,309 @@
+{
+  "timestamp": "2026-09-15T10:47:05.856Z",
+  "totalRuns": 13,
+  "passedRuns": 13,
+  "allResults": [
+    {
+      "id": "SCENARIO_1_1",
+      "name": "Booking Concurrency: 10 requests for 1 remaining slot",
+      "category": "booking",
+      "concurrency": 10,
+      "runs": [
+        {
+          "runIndex": 1,
+          "concurrency": 10,
+          "successCount": 1,
+          "rejectedCount": 9,
+          "unexpectedCount": 0,
+          "minLatencyMs": 30.618416000000025,
+          "maxLatencyMs": 33.68058300000007,
+          "avgLatencyMs": 31.94,
+          "p95LatencyMs": 33.68,
+          "dbTokensCreated": 1,
+          "dbBookedCount": 10,
+          "expectedBookedCount": 10,
+          "doubleBookingsOrClaims": 0,
+          "passed": true,
+          "notes": "Pass: exactly 1 booked, 9 rejected"
+        }
+      ],
+      "allPassed": true
+    },
+    {
+      "id": "SCENARIO_1_2",
+      "name": "Booking Concurrency: 50 requests for 1 remaining slot",
+      "category": "booking",
+      "concurrency": 50,
+      "runs": [
+        {
+          "runIndex": 1,
+          "concurrency": 50,
+          "successCount": 1,
+          "rejectedCount": 49,
+          "unexpectedCount": 0,
+          "minLatencyMs": 18.887666999999965,
+          "maxLatencyMs": 33.02362500000004,
+          "avgLatencyMs": 26.93,
+          "p95LatencyMs": 32.6,
+          "dbTokensCreated": 1,
+          "dbBookedCount": 50,
+          "expectedBookedCount": 50,
+          "doubleBookingsOrClaims": 0,
+          "passed": true,
+          "notes": "Pass: exactly 1 booked, 49 rejected"
+        }
+      ],
+      "allPassed": true
+    },
+    {
+      "id": "SCENARIO_1_3",
+      "name": "Booking Concurrency: 10 requests for 3 remaining slots",
+      "category": "booking",
+      "concurrency": 10,
+      "runs": [
+        {
+          "runIndex": 1,
+          "concurrency": 10,
+          "successCount": 3,
+          "rejectedCount": 7,
+          "unexpectedCount": 0,
+          "minLatencyMs": 8.195791999999983,
+          "maxLatencyMs": 14.571749999999838,
+          "avgLatencyMs": 12.96,
+          "p95LatencyMs": 14.57,
+          "dbTokensCreated": 3,
+          "dbBookedCount": 10,
+          "expectedBookedCount": 10,
+          "doubleBookingsOrClaims": 0,
+          "passed": true,
+          "notes": "Pass: exactly 3 booked, 7 rejected"
+        }
+      ],
+      "allPassed": true
+    },
+    {
+      "id": "SCENARIO_1_4",
+      "name": "Booking Flakiness Test: 10 requests for 1 remaining slot (5 runs)",
+      "category": "booking",
+      "concurrency": 10,
+      "runs": [
+        {
+          "runIndex": 1,
+          "concurrency": 10,
+          "successCount": 1,
+          "rejectedCount": 9,
+          "unexpectedCount": 0,
+          "minLatencyMs": 9.219500000000153,
+          "maxLatencyMs": 10.87870799999996,
+          "avgLatencyMs": 10.02,
+          "p95LatencyMs": 10.88,
+          "dbTokensCreated": 1,
+          "dbBookedCount": 10,
+          "expectedBookedCount": 10,
+          "doubleBookingsOrClaims": 0,
+          "passed": true,
+          "notes": "Pass: exactly 1 booked, 9 rejected"
+        },
+        {
+          "runIndex": 2,
+          "concurrency": 10,
+          "successCount": 1,
+          "rejectedCount": 9,
+          "unexpectedCount": 0,
+          "minLatencyMs": 8.09766599999989,
+          "maxLatencyMs": 9.838874999999916,
+          "avgLatencyMs": 9.04,
+          "p95LatencyMs": 9.84,
+          "dbTokensCreated": 1,
+          "dbBookedCount": 10,
+          "expectedBookedCount": 10,
+          "doubleBookingsOrClaims": 0,
+          "passed": true,
+          "notes": "Pass: exactly 1 booked, 9 rejected"
+        },
+        {
+          "runIndex": 3,
+          "concurrency": 10,
+          "successCount": 1,
+          "rejectedCount": 9,
+          "unexpectedCount": 0,
+          "minLatencyMs": 8.0959170000001,
+          "maxLatencyMs": 10.596332999999959,
+          "avgLatencyMs": 9.26,
+          "p95LatencyMs": 10.6,
+          "dbTokensCreated": 1,
+          "dbBookedCount": 10,
+          "expectedBookedCount": 10,
+          "doubleBookingsOrClaims": 0,
+          "passed": true,
+          "notes": "Pass: exactly 1 booked, 9 rejected"
+        },
+        {
+          "runIndex": 4,
+          "concurrency": 10,
+          "successCount": 1,
+          "rejectedCount": 9,
+          "unexpectedCount": 0,
+          "minLatencyMs": 6.507082999999966,
+          "maxLatencyMs": 8.199832999999899,
+          "avgLatencyMs": 7.44,
+          "p95LatencyMs": 8.2,
+          "dbTokensCreated": 1,
+          "dbBookedCount": 10,
+          "expectedBookedCount": 10,
+          "doubleBookingsOrClaims": 0,
+          "passed": true,
+          "notes": "Pass: exactly 1 booked, 9 rejected"
+        },
+        {
+          "runIndex": 5,
+          "concurrency": 10,
+          "successCount": 1,
+          "rejectedCount": 9,
+          "unexpectedCount": 0,
+          "minLatencyMs": 8.20895900000005,
+          "maxLatencyMs": 10.047000000000025,
+          "avgLatencyMs": 9.08,
+          "p95LatencyMs": 10.05,
+          "dbTokensCreated": 1,
+          "dbBookedCount": 10,
+          "expectedBookedCount": 10,
+          "doubleBookingsOrClaims": 0,
+          "passed": true,
+          "notes": "Pass: exactly 1 booked, 9 rejected"
+        }
+      ],
+      "allPassed": true
+    },
+    {
+      "id": "SCENARIO_2_1",
+      "name": "Call-Next Concurrency: 5 simultaneous callers (FOR UPDATE SKIP LOCKED)",
+      "category": "call-next",
+      "concurrency": 5,
+      "runs": [
+        {
+          "runIndex": 1,
+          "concurrency": 5,
+          "successCount": 5,
+          "rejectedCount": 0,
+          "unexpectedCount": 0,
+          "minLatencyMs": 6.43362500000012,
+          "maxLatencyMs": 6.695083000000068,
+          "avgLatencyMs": 6.62,
+          "p95LatencyMs": 6.7,
+          "dbTokensCreated": 5,
+          "dbBookedCount": 5,
+          "expectedBookedCount": 5,
+          "doubleBookingsOrClaims": 0,
+          "passed": true,
+          "notes": "Pass: exactly 5 distinct tokens claimed with 0 duplicates"
+        }
+      ],
+      "allPassed": true
+    },
+    {
+      "id": "SCENARIO_2_2",
+      "name": "Call-Next Concurrency: 20 simultaneous callers (FOR UPDATE SKIP LOCKED)",
+      "category": "call-next",
+      "concurrency": 20,
+      "runs": [
+        {
+          "runIndex": 1,
+          "concurrency": 20,
+          "successCount": 20,
+          "rejectedCount": 0,
+          "unexpectedCount": 0,
+          "minLatencyMs": 8.128208000000086,
+          "maxLatencyMs": 14.840667000000167,
+          "avgLatencyMs": 11.98,
+          "p95LatencyMs": 14.21,
+          "dbTokensCreated": 20,
+          "dbBookedCount": 20,
+          "expectedBookedCount": 20,
+          "doubleBookingsOrClaims": 0,
+          "passed": true,
+          "notes": "Pass: exactly 20 distinct tokens claimed with 0 duplicates"
+        }
+      ],
+      "allPassed": true
+    },
+    {
+      "id": "SCENARIO_2_3",
+      "name": "Call-Next Concurrency: 50 simultaneous callers (FOR UPDATE SKIP LOCKED)",
+      "category": "call-next",
+      "concurrency": 50,
+      "runs": [
+        {
+          "runIndex": 1,
+          "concurrency": 50,
+          "successCount": 50,
+          "rejectedCount": 0,
+          "unexpectedCount": 0,
+          "minLatencyMs": 17.74895800000013,
+          "maxLatencyMs": 29.963166999999885,
+          "avgLatencyMs": 24.14,
+          "p95LatencyMs": 29.64,
+          "dbTokensCreated": 50,
+          "dbBookedCount": 50,
+          "expectedBookedCount": 50,
+          "doubleBookingsOrClaims": 0,
+          "passed": true,
+          "notes": "Pass: exactly 50 distinct tokens claimed with 0 duplicates"
+        }
+      ],
+      "allPassed": true
+    },
+    {
+      "id": "SCENARIO_3_1",
+      "name": "Token State Integrity: Concurrent valid next vs invalid skip (arrived -> verification vs accepted)",
+      "category": "transition",
+      "concurrency": 2,
+      "runs": [
+        {
+          "runIndex": 1,
+          "concurrency": 2,
+          "successCount": 1,
+          "rejectedCount": 1,
+          "unexpectedCount": 0,
+          "minLatencyMs": 4.511541000000079,
+          "maxLatencyMs": 5.985915999999861,
+          "avgLatencyMs": 5.25,
+          "p95LatencyMs": 5.985915999999861,
+          "dbTokensCreated": 1,
+          "dbBookedCount": 1,
+          "expectedBookedCount": 1,
+          "doubleBookingsOrClaims": 0,
+          "passed": true,
+          "notes": "Pass: deterministic resolution, one succeeded (status -> verification), conflicting request rejected with 400"
+        }
+      ],
+      "allPassed": true
+    },
+    {
+      "id": "SCENARIO_3_2",
+      "name": "Token State Integrity: Concurrent valid next vs invalid skip (verification -> quality_check vs procured)",
+      "category": "transition",
+      "concurrency": 2,
+      "runs": [
+        {
+          "runIndex": 1,
+          "concurrency": 2,
+          "successCount": 1,
+          "rejectedCount": 1,
+          "unexpectedCount": 0,
+          "minLatencyMs": 3.8607090000000426,
+          "maxLatencyMs": 4.90341699999999,
+          "avgLatencyMs": 4.38,
+          "p95LatencyMs": 4.90341699999999,
+          "dbTokensCreated": 1,
+          "dbBookedCount": 1,
+          "expectedBookedCount": 1,
+          "doubleBookingsOrClaims": 0,
+          "passed": true,
+          "notes": "Pass: deterministic resolution, one succeeded (status -> quality_check), conflicting request rejected with 400"
+        }
+      ],
+      "allPassed": true
+    }
+  ]
+}

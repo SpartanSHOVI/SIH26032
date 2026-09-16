@@ -1,0 +1,6 @@
+state,state_id,district,district_id,market_id,mandi_name,address,pincode,phone,email,website,market_type,regulated,established_year,area_hectares,storage_capacity_mt,cold_storage,num_shops,num_traders,num_commission_agents,num_weighing_machines,commodities_traded,arrival_days,working_hours,bank_present,atm_present,canteen_present,internet_present,toilet_facilities,drinking_water,electricity,road_connectivity,nearest_railway,nearest_airport,latitude,longitude,scraped_at,scrape_status,error_message
+Andaman and Nicobar,1,North and Middle Andaman ,2,3367,Diglipur Vegetable Market (Subhashgram),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,State dropdown not found
+Andaman and Nicobar,1,South Andaman,3,345,Bathubasti Vegetable Market,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,State dropdown not found
+Andhra Pradesh,2,Polavaram,719,4771,Rampachodvaram APMC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,State dropdown not found
+Andaman and Nicobar,1,North and Middle Andaman ,2,3366,Mayabander Vegetable Market,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,State dropdown not found
+Andaman and Nicobar,1,Nicobar,1,3365,Perka Vegetable Market,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,State dropdown not found

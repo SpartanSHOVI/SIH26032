@@ -1,0 +1,227 @@
+name: AnnSetu Migration CI
+
+on:
+  pull_request:
+    paths:
+      - 'AnnSetu/apps/api/**'
+      - 'AnnSetu/apps/web/**'
+      - 'AnnSetu/packages/contracts/**'
+      - 'AnnSetu/package.json'
+      - 'AnnSetu/pnpm-workspace.yaml'
+      - 'AnnSetu/pnpm-lock.yaml'
+      - '.github/workflows/ci.yml'
+  push:
+    branches:
+      - main
+      - 'team/**'
+    paths:
+      - 'AnnSetu/apps/api/**'
+      - 'AnnSetu/apps/web/**'
+      - 'AnnSetu/packages/contracts/**'
+      - 'AnnSetu/package.json'
+      - 'AnnSetu/pnpm-workspace.yaml'
+      - 'AnnSetu/pnpm-lock.yaml'
+      - '.github/workflows/ci.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  DATABASE_URL: postgresql://postgres:postgres@localhost:5432/annsetu
+  REDIS_URL: redis://localhost:6379
+  JWT_SECRET: test-secret-key-for-ci-minimum-32-chars-ok
+
+jobs:
+  typecheck:
+    name: Typecheck (@annsetu/api & @annsetu/web)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: AnnSetu
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.9
+
+      - name: Setup Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24.20.0'
+          cache: 'pnpm'
+          cache-dependency-path: 'AnnSetu/pnpm-lock.yaml'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate Prisma client
+        run: pnpm db:generate
+
+      - name: Run TypeScript typecheck
+        run: pnpm typecheck
+
+  unit-integration-tests:
+    name: Unit & Integration Tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: AnnSetu
+    services:
+      postgres:
+        image: postgres:16.4-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: annsetu
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      redis:
+        image: redis:7.2.4-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.9
+
+      - name: Setup Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24.20.0'
+          cache: 'pnpm'
+          cache-dependency-path: 'AnnSetu/pnpm-lock.yaml'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate Prisma client
+        run: pnpm db:generate
+
+      - name: Apply database migrations
+        run: pnpm db:migrate
+
+      - name: Run API unit & integration tests
+        run: pnpm --filter @annsetu/api test:unit
+
+      - name: Run Web unit tests
+        run: pnpm --filter @annsetu/web test
+
+  concurrency-load-tests:
+    name: Concurrency & Load Tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: AnnSetu
+    services:
+      postgres:
+        image: postgres:16.4-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: annsetu
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      redis:
+        image: redis:7.2.4-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.9
+
+      - name: Setup Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24.20.0'
+          cache: 'pnpm'
+          cache-dependency-path: 'AnnSetu/pnpm-lock.yaml'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate Prisma client
+        run: pnpm db:generate
+
+      - name: Apply database migrations
+        run: pnpm db:migrate
+
+      - name: Build API for standalone load-test server
+        run: pnpm --filter @annsetu/api build
+
+      - name: Execute Concurrency & Load Test Suite
+        run: pnpm test:load
+        env:
+          PORT: "3102"
+
+      - name: Upload load test telemetry artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: load-test-results
+          path: AnnSetu/apps/api/test/load-test-results.json
+          if-no-files-found: ignore
+
+  production-build:
+    name: Production Build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: AnnSetu
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.9
+
+      - name: Setup Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24.20.0'
+          cache: 'pnpm'
+          cache-dependency-path: 'AnnSetu/pnpm-lock.yaml'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate Prisma client
+        run: pnpm db:generate
+
+      - name: Build API & Web production bundles
+        run: pnpm build:migration

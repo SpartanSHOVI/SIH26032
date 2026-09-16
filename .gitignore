@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+**/node_modules/
+target/
+**/target/
+
+# Build outputs
+dist/
+build/
+.next/
+**/.next/
+*.tsbuildinfo
+*.jar
+*.war
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Docker
+.docker/
+
+# Generated files
+spring-boot/target/openapi.yaml
+realtime-service/src/generated/
+farmer-portal/src/generated/
+
+# Misc
+*.pem
+*.key
+*.crt
+AnnSetuV2/
