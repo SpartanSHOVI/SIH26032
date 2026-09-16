@@ -3,24 +3,24 @@ name: AnnSetu Migration CI
 on:
   pull_request:
     paths:
-      - 'AnnSetu/apps/api/**'
-      - 'AnnSetu/apps/web/**'
-      - 'AnnSetu/packages/contracts/**'
-      - 'AnnSetu/package.json'
-      - 'AnnSetu/pnpm-workspace.yaml'
-      - 'AnnSetu/pnpm-lock.yaml'
+      - 'apps/api/**'
+      - 'apps/web/**'
+      - 'packages/contracts/**'
+      - 'package.json'
+      - 'pnpm-workspace.yaml'
+      - 'pnpm-lock.yaml'
       - '.github/workflows/ci.yml'
   push:
     branches:
       - main
       - 'team/**'
     paths:
-      - 'AnnSetu/apps/api/**'
-      - 'AnnSetu/apps/web/**'
-      - 'AnnSetu/packages/contracts/**'
-      - 'AnnSetu/package.json'
-      - 'AnnSetu/pnpm-workspace.yaml'
-      - 'AnnSetu/pnpm-lock.yaml'
+      - 'apps/api/**'
+      - 'apps/web/**'
+      - 'packages/contracts/**'
+      - 'package.json'
+      - 'pnpm-workspace.yaml'
+      - 'pnpm-lock.yaml'
       - '.github/workflows/ci.yml'
   workflow_dispatch:
 
@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: AnnSetu
+        working-directory: .
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -54,7 +54,7 @@ jobs:
         with:
           node-version: '24.20.0'
           cache: 'pnpm'
-          cache-dependency-path: 'AnnSetu/pnpm-lock.yaml'
+          cache-dependency-path: 'pnpm-lock.yaml'
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -70,7 +70,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: AnnSetu
+        working-directory: .
     services:
       postgres:
         image: postgres:16.4-alpine
@@ -108,7 +108,7 @@ jobs:
         with:
           node-version: '24.20.0'
           cache: 'pnpm'
-          cache-dependency-path: 'AnnSetu/pnpm-lock.yaml'
+          cache-dependency-path: 'pnpm-lock.yaml'
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -130,7 +130,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: AnnSetu
+        working-directory: .
     services:
       postgres:
         image: postgres:16.4-alpine
@@ -168,7 +168,7 @@ jobs:
         with:
           node-version: '24.20.0'
           cache: 'pnpm'
-          cache-dependency-path: 'AnnSetu/pnpm-lock.yaml'
+          cache-dependency-path: 'pnpm-lock.yaml'
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -192,7 +192,7 @@ jobs:
         if: always()
         with:
           name: load-test-results
-          path: AnnSetu/apps/api/test/load-test-results.json
+          path: apps/api/test/load-test-results.json
           if-no-files-found: ignore
 
   production-build:
@@ -200,7 +200,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: AnnSetu
+        working-directory: .
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -215,7 +215,7 @@ jobs:
         with:
           node-version: '24.20.0'
           cache: 'pnpm'
-          cache-dependency-path: 'AnnSetu/pnpm-lock.yaml'
+          cache-dependency-path: 'pnpm-lock.yaml'
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
